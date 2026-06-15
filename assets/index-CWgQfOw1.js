@@ -40,6 +40,10 @@
           
           <button type="submit" class="btn btn-primary w-full">Login to Dashboard</button>
           
+          <div class="text-center mt-md">
+            <span class="text-sm">Don't have an account? <a href="#register" class="text-primary font-medium" style="text-decoration: underline;">Register here</a></span>
+          </div>
+
           <div class="auth-footer mt-md">
             <label class="checkbox-container">
               <input type="checkbox" checked>
@@ -55,6 +59,41 @@
       </div>
     </div>
   `}s.init=()=>{let e=document.getElementById(`login-form`);e&&e.addEventListener(`submit`,async t=>{t.preventDefault();let n=document.getElementById(`email`).value,r=document.getElementById(`password`).value,i=e.querySelector(`button[type="submit"]`);if(n&&r)try{if(i.textContent=`Authenticating...`,i.disabled=!0,n===`admin@smartbiz.com`&&r===`1234`)try{await o.register({email:`admin@smartbiz.com`,password:`1234`,phone:`0000000000`,merchant_name:`SmartBiz Demo Business`})}catch{}let e=await o.login({email:n,password:r});e.user&&(localStorage.setItem(`temp_email`,n),localStorage.setItem(`merchant_id`,e.user.id),localStorage.setItem(`merchant_name`,e.user.merchant_name||`Business Info`),window.location.hash=`#dashboard`)}catch(e){alert(e.message||`Login failed. Please check credentials.`)}finally{i.textContent=`Login to Dashboard`,i.disabled=!1}})};function c(){return`
+    <div class="auth-container">
+      <div class="auth-card">
+        <div class="auth-header">
+          <div class="auth-logo">SB</div>
+          <h2>Create an Account</h2>
+          <p>Register your business to get started</p>
+        </div>
+        
+        <form id="register-form" class="auth-form">
+          <div class="form-group">
+            <label for="merchant_name">Business Name</label>
+            <input type="text" id="merchant_name" class="w-full p-2 border rounded mt-xs" placeholder="SmartBiz Store" required>
+          </div>
+          <div class="form-group mt-sm">
+            <label for="reg-email">Email Address</label>
+            <input type="email" id="reg-email" class="w-full p-2 border rounded mt-xs" placeholder="admin@smartbiz.com" required>
+          </div>
+          <div class="form-group mt-sm">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" class="w-full p-2 border rounded mt-xs" placeholder="9876543210" required>
+          </div>
+          <div class="form-group mt-sm">
+            <label for="reg-password">4-Digit Security PIN</label>
+            <input type="password" id="reg-password" class="w-full p-2 border rounded mt-xs" placeholder="1234" maxlength="4" pattern="[0-9]{4}" required>
+          </div>
+          
+          <button type="submit" class="btn btn-primary w-full mt-md">Register Account</button>
+          
+          <div class="text-center mt-md">
+            <span class="text-sm">Already have an account? <a href="#login" class="text-primary font-medium" style="text-decoration: underline;">Login here</a></span>
+          </div>
+        </form>
+      </div>
+    </div>
+  `}c.init=()=>{let e=document.getElementById(`register-form`);e&&e.addEventListener(`submit`,async t=>{t.preventDefault();let n=document.getElementById(`merchant_name`).value,r=document.getElementById(`reg-email`).value,i=document.getElementById(`phone`).value,a=document.getElementById(`reg-password`).value,s=e.querySelector(`button[type="submit"]`);if(r&&a&&n)try{s.textContent=`Registering...`,s.disabled=!0,await o.register({email:r,password:a,phone:i,merchant_name:n}),alert(`Registration successful! You can now log in.`),window.location.hash=`#login`}catch(e){alert(e.message||`Registration failed. This email or phone might already be in use.`)}finally{s.textContent=`Register Account`,s.disabled=!1}})};function l(){return`
     <div class="auth-container">
       <div class="auth-card">
         <header class="app-header-auth">
@@ -84,7 +123,7 @@
         </form>
       </div>
     </div>
-  `}c.init=()=>{let e=localStorage.getItem(`temp_phone`)||`98765 43210`,t=document.getElementById(`display-phone`);t&&(t.textContent=`+91 ${e}`);let n=document.querySelectorAll(`.otp-digit`);n.forEach((e,t)=>{e.addEventListener(`input`,e=>{e.target.value&&t<n.length-1&&n[t+1].focus()}),e.addEventListener(`keydown`,e=>{e.key===`Backspace`&&!e.target.value&&t>0&&n[t-1].focus()})});let r=document.getElementById(`otp-form`);r&&r.addEventListener(`submit`,e=>{e.preventDefault(),window.location.hash=`#dashboard`});let i=45,a=document.getElementById(`timer`),o=setInterval(()=>{if(i--,i<=0)clearInterval(o),a&&(a.parentElement.textContent=`Resend Code`);else{let e=Math.floor(i/60),t=i%60;a&&(a.textContent=`${e}:${t.toString().padStart(2,`0`)}`)}},1e3);window.addEventListener(`hashchange`,()=>clearInterval(o),{once:!0})};function l(){return`
+  `}l.init=()=>{let e=localStorage.getItem(`temp_phone`)||`98765 43210`,t=document.getElementById(`display-phone`);t&&(t.textContent=`+91 ${e}`);let n=document.querySelectorAll(`.otp-digit`);n.forEach((e,t)=>{e.addEventListener(`input`,e=>{e.target.value&&t<n.length-1&&n[t+1].focus()}),e.addEventListener(`keydown`,e=>{e.key===`Backspace`&&!e.target.value&&t>0&&n[t-1].focus()})});let r=document.getElementById(`otp-form`);r&&r.addEventListener(`submit`,e=>{e.preventDefault(),window.location.hash=`#dashboard`});let i=45,a=document.getElementById(`timer`),o=setInterval(()=>{if(i--,i<=0)clearInterval(o),a&&(a.parentElement.textContent=`Resend Code`);else{let e=Math.floor(i/60),t=i%60;a&&(a.textContent=`${e}:${t.toString().padStart(2,`0`)}`)}},1e3);window.addEventListener(`hashchange`,()=>clearInterval(o),{once:!0})};function u(){return`
     <div class="page-container">
       ${r(`Dashboard`)}
       
@@ -185,7 +224,7 @@
       
       ${n(`dashboard`)}
     </div>
-  `}l.init=async()=>{document.getElementById(`btn-add-customer`)?.addEventListener(`click`,()=>{window.location.hash=`#customers`}),document.getElementById(`btn-new-invoice`)?.addEventListener(`click`,()=>{window.location.hash=`#billing`}),document.getElementById(`btn-add-stock`)?.addEventListener(`click`,()=>{window.location.hash=`#inventory/add`}),document.getElementById(`btn-check-reports`)?.addEventListener(`click`,()=>{window.location.hash=`#reports`});try{let e=await o.getDashboardStats();document.getElementById(`kpi-total-sales`).textContent=`₹ ${e.salesToday.toLocaleString()}`,document.getElementById(`kpi-total-udhar`).textContent=`₹ ${e.udharTotal.toLocaleString()}`,document.getElementById(`kpi-stock-alerts`).textContent=`${e.lowStockCount} Items Low`,document.getElementById(`kpi-cash-hand`).textContent=`₹ ${e.salesToday.toLocaleString()}`;let t=document.getElementById(`dashboard-recent-tx`);e.recentTransactions&&e.recentTransactions.length>0?t.innerHTML=e.recentTransactions.map(e=>`
+  `}u.init=async()=>{document.getElementById(`btn-add-customer`)?.addEventListener(`click`,()=>{window.location.hash=`#customers`}),document.getElementById(`btn-new-invoice`)?.addEventListener(`click`,()=>{window.location.hash=`#billing`}),document.getElementById(`btn-add-stock`)?.addEventListener(`click`,()=>{window.location.hash=`#inventory/add`}),document.getElementById(`btn-check-reports`)?.addEventListener(`click`,()=>{window.location.hash=`#reports`});try{let e=await o.getDashboardStats();document.getElementById(`kpi-total-sales`).textContent=`₹ ${e.salesToday.toLocaleString()}`,document.getElementById(`kpi-total-udhar`).textContent=`₹ ${e.udharTotal.toLocaleString()}`,document.getElementById(`kpi-stock-alerts`).textContent=`${e.lowStockCount} Items Low`,document.getElementById(`kpi-cash-hand`).textContent=`₹ ${e.salesToday.toLocaleString()}`;let t=document.getElementById(`dashboard-recent-tx`);e.recentTransactions&&e.recentTransactions.length>0?t.innerHTML=e.recentTransactions.map(e=>`
         <div class="transaction-item">
           <div class="tx-icon">${e.type===`got`?`<i class="ph ph-trend-up text-success"></i>`:`<i class="ph ph-trend-down text-error"></i>`}</div>
           <div class="tx-details">
@@ -196,7 +235,7 @@
             ${e.type===`got`?`+`:`-`} ₹ ${e.amount.toLocaleString()}
           </div>
         </div>
-      `).join(``):t.innerHTML=`<div style="padding: 1rem; text-align: center; color: var(--text-secondary);">No recent transactions.</div>`}catch(e){console.error(`Failed to load dashboard stats:`,e)}};function u(){return`
+      `).join(``):t.innerHTML=`<div style="padding: 1rem; text-align: center; color: var(--text-secondary);">No recent transactions.</div>`}catch(e){console.error(`Failed to load dashboard stats:`,e)}};function d(){return`
     <div class="page-container">
       ${r(`Inventory`)}
       
@@ -221,7 +260,7 @@
       
       ${n(`inventory`)}
     </div>
-  `}u.init=async()=>{let e=document.querySelector(`.search-input`),t=document.querySelectorAll(`.chip`),n=document.getElementById(`inventory-list`),r=[],i=`all`,a=``,s=()=>{let e=r.filter(e=>{let t=(e.item_name||``).toLowerCase(),n=(e.sku||``).toLowerCase(),r=(e.category||``).toLowerCase(),o=t.includes(a)||n.includes(a),s=i===`all`||r.includes(i)||t.includes(i);return o&&s});if(e.length===0){n.innerHTML=`<div style="padding: 1rem; text-align: center; color: var(--text-secondary);">No items found.</div>`;return}n.innerHTML=e.map(e=>`
+  `}d.init=async()=>{let e=document.querySelector(`.search-input`),t=document.querySelectorAll(`.chip`),n=document.getElementById(`inventory-list`),r=[],i=`all`,a=``,s=()=>{let e=r.filter(e=>{let t=(e.item_name||``).toLowerCase(),n=(e.sku||``).toLowerCase(),r=(e.category||``).toLowerCase(),o=t.includes(a)||n.includes(a),s=i===`all`||r.includes(i)||t.includes(i);return o&&s});if(e.length===0){n.innerHTML=`<div style="padding: 1rem; text-align: center; color: var(--text-secondary);">No items found.</div>`;return}n.innerHTML=e.map(e=>`
       <div class="inventory-item card mb-sm">
         <div class="item-info">
           <div class="item-name">${e.item_name}</div>
@@ -235,7 +274,7 @@
           </div>
         </div>
       </div>
-    `).join(``)};try{r=await o.getInventory(),s()}catch{n.innerHTML=`<div style="padding: 1rem; text-align: center; color: var(--text-error);">Failed to load inventory.</div>`}e?.addEventListener(`input`,e=>{a=e.target.value.toLowerCase(),s()}),t.forEach(e=>{e.addEventListener(`click`,()=>{t.forEach(e=>e.classList.remove(`active`)),e.classList.add(`active`),i=e.textContent.toLowerCase(),s()})});let c=document.querySelector(`.fab`);c&&c.addEventListener(`click`,()=>{window.location.hash=`#inventory/add`})};function d(){return`
+    `).join(``)};try{r=await o.getInventory(),s()}catch{n.innerHTML=`<div style="padding: 1rem; text-align: center; color: var(--text-error);">Failed to load inventory.</div>`}e?.addEventListener(`input`,e=>{a=e.target.value.toLowerCase(),s()}),t.forEach(e=>{e.addEventListener(`click`,()=>{t.forEach(e=>e.classList.remove(`active`)),e.classList.add(`active`),i=e.textContent.toLowerCase(),s()})});let c=document.querySelector(`.fab`);c&&c.addEventListener(`click`,()=>{window.location.hash=`#inventory/add`})};function f(){return`
     <div class="page-container">
       <header class="app-header">
         <button class="icon-btn" onclick="window.history.back()"><i class="ph ph-arrow-left"></i></button>
@@ -321,7 +360,7 @@
       </main>
       ${n(`inventory`)}
     </div>
-  `}d.init=()=>{let e=document.getElementById(`add-product-form`);e&&e.addEventListener(`submit`,async t=>{t.preventDefault();let n={item_name:document.getElementById(`p-name`).value,category:document.getElementById(`p-cat`).value,sku:`SKU-`+Math.floor(Math.random()*1e6),hsn:document.getElementById(`p-hsn`).value,sale_price:parseFloat(document.getElementById(`p-sale`).value)||0,cost_price:parseFloat(document.getElementById(`p-cost`).value)||0,stock_level:parseInt(document.getElementById(`p-stock`).value)||0,unit:document.getElementById(`p-unit`).value,gst_rate:parseInt(document.getElementById(`p-gst`).value)||0,merchant_id:localStorage.getItem(`merchant_id`)||1},r=e.querySelector(`button[type="submit"]`);try{r.disabled=!0,r.textContent=`Saving...`,await o.addInventoryItem(n),alert(`Product "${n.item_name}" saved successfully!`),window.location.hash=`#inventory`}catch(e){alert(`Failed to save product: `+e.message)}finally{r.disabled=!1,r.textContent=`Save Product`}})};function f(){return`
+  `}f.init=()=>{let e=document.getElementById(`add-product-form`);e&&e.addEventListener(`submit`,async t=>{t.preventDefault();let n={item_name:document.getElementById(`p-name`).value,category:document.getElementById(`p-cat`).value,sku:`SKU-`+Math.floor(Math.random()*1e6),hsn:document.getElementById(`p-hsn`).value,sale_price:parseFloat(document.getElementById(`p-sale`).value)||0,cost_price:parseFloat(document.getElementById(`p-cost`).value)||0,stock_level:parseInt(document.getElementById(`p-stock`).value)||0,unit:document.getElementById(`p-unit`).value,gst_rate:parseInt(document.getElementById(`p-gst`).value)||0,merchant_id:localStorage.getItem(`merchant_id`)||1},r=e.querySelector(`button[type="submit"]`);try{r.disabled=!0,r.textContent=`Saving...`,await o.addInventoryItem(n),alert(`Product "${n.item_name}" saved successfully!`),window.location.hash=`#inventory`}catch(e){alert(`Failed to save product: `+e.message)}finally{r.disabled=!1,r.textContent=`Save Product`}})};function p(){return`
     <div class="page-container">
       <header class="app-header">
         <button class="icon-btn" onclick="window.history.back()"><i class="ph ph-arrow-left"></i></button>
@@ -380,7 +419,7 @@
       
       ${n(`billing`)}
     </div>
-  `}f.init=async()=>{let e=[],t=[],n=[],r=document.getElementById(`invoice-items-list`),i=document.getElementById(`subtotal`),a=document.getElementById(`total-gst`),s=document.getElementById(`grand-total`),c=document.getElementById(`billing-customer`),l=document.getElementById(`billing-inventory`);try{n=await o.getCustomers(),c.innerHTML=`<option value="">-- Choose Customer --</option>`+n.map(e=>`<option value="${e.id}">${e.name}</option>`).join(``),t=await o.getInventory(),l.innerHTML=`<option value="">-- Choose Item --</option>`+t.filter(e=>e.stock_level>0).map(e=>`<option value="${e.id}">${e.item_name} (Stock: ${e.stock_level}) - ₹${e.sale_price}</option>`).join(``)}catch(e){console.error(`Failed to load data for billing`,e)}function u(){r.innerHTML=e.map(e=>{let t=e.qty*e.price,n=t*e.gst/100,r=t+n;return`
+  `}p.init=async()=>{let e=[],t=[],n=[],r=document.getElementById(`invoice-items-list`),i=document.getElementById(`subtotal`),a=document.getElementById(`total-gst`),s=document.getElementById(`grand-total`),c=document.getElementById(`billing-customer`),l=document.getElementById(`billing-inventory`);try{n=await o.getCustomers(),c.innerHTML=`<option value="">-- Choose Customer --</option>`+n.map(e=>`<option value="${e.id}">${e.name}</option>`).join(``),t=await o.getInventory(),l.innerHTML=`<option value="">-- Choose Item --</option>`+t.filter(e=>e.stock_level>0).map(e=>`<option value="${e.id}">${e.item_name} (Stock: ${e.stock_level}) - ₹${e.sale_price}</option>`).join(``)}catch(e){console.error(`Failed to load data for billing`,e)}function u(){r.innerHTML=e.map(e=>{let t=e.qty*e.price,n=t*e.gst/100,r=t+n;return`
         <div class="item-entry card mb-sm" data-id="${e.id}">
           <div class="flex justify-between">
             <div>
@@ -412,7 +451,7 @@
             </div>
           </div>
         </div>
-      `}).join(``),d(),f()}function d(){let t=0,n=0;e.forEach(e=>{let r=e.qty*e.price;t+=r,n+=r*e.gst/100});let r=t+n;i.dataset.value=t,a.dataset.value=n,s.dataset.value=r,i.textContent=`₹ ${t.toLocaleString(`en-IN`,{minimumFractionDigits:2})}`,a.textContent=`₹ ${n.toLocaleString(`en-IN`,{minimumFractionDigits:2})}`,s.textContent=`₹ ${r.toLocaleString(`en-IN`,{minimumFractionDigits:2})}`}function f(){document.querySelectorAll(`.btn-remove-item`).forEach(t=>{t.addEventListener(`click`,()=>{let n=parseInt(t.dataset.id);e=e.filter(e=>e.id!==n),u()})}),document.querySelectorAll(`.qty-btn.plus`).forEach(t=>{t.addEventListener(`click`,()=>{let n=parseInt(t.dataset.id),r=e.find(e=>e.id===n);r&&(r.qty++,u())})}),document.querySelectorAll(`.qty-btn.minus`).forEach(t=>{t.addEventListener(`click`,()=>{let n=parseInt(t.dataset.id),r=e.find(e=>e.id===n);r&&r.qty>1&&(r.qty--,u())})})}document.getElementById(`btn-add-item`)?.addEventListener(`click`,()=>{let n=parseInt(l.value);if(isNaN(n))return alert(`Select an item first`);let r=e.find(e=>e.id===n);if(r){r.qty++,u();return}let i=t.find(e=>e.id===n);i&&(e.push({id:i.id,name:i.item_name,hsn:i.hsn,qty:1,price:i.sale_price||0,gst:i.gst_rate||0}),u())}),document.getElementById(`btn-checkout`)?.addEventListener(`click`,async()=>{let t=parseInt(c.value);if(isNaN(t))return alert(`Select a customer first`);if(!e.length)return alert(`Add items to the invoice`);let n=document.getElementById(`btn-checkout`);n.disabled=!0,n.textContent=`Saving...`;try{let n={invoice_number:`INV-`+Date.now(),customer_id:t,subtotal:parseFloat(i.dataset.value)||0,total_gst:parseFloat(a.dataset.value)||0,grand_total:parseFloat(s.dataset.value)||0,merchant_id:localStorage.getItem(`merchant_id`)||1,items:e.map(e=>({id:e.id,item_name:e.name,qty:e.qty,price:e.price,gst_rate:e.gst,subtotal:e.qty*e.price}))};await o.createInvoice(n),window.location.hash=`#payment-success`}catch(e){alert(`Failed: `+e.message),n.disabled=!1,n.textContent=`Save & Preview`}}),u()};function p(){return`
+      `}).join(``),d(),f()}function d(){let t=0,n=0;e.forEach(e=>{let r=e.qty*e.price;t+=r,n+=r*e.gst/100});let r=t+n;i.dataset.value=t,a.dataset.value=n,s.dataset.value=r,i.textContent=`₹ ${t.toLocaleString(`en-IN`,{minimumFractionDigits:2})}`,a.textContent=`₹ ${n.toLocaleString(`en-IN`,{minimumFractionDigits:2})}`,s.textContent=`₹ ${r.toLocaleString(`en-IN`,{minimumFractionDigits:2})}`}function f(){document.querySelectorAll(`.btn-remove-item`).forEach(t=>{t.addEventListener(`click`,()=>{let n=parseInt(t.dataset.id);e=e.filter(e=>e.id!==n),u()})}),document.querySelectorAll(`.qty-btn.plus`).forEach(t=>{t.addEventListener(`click`,()=>{let n=parseInt(t.dataset.id),r=e.find(e=>e.id===n);r&&(r.qty++,u())})}),document.querySelectorAll(`.qty-btn.minus`).forEach(t=>{t.addEventListener(`click`,()=>{let n=parseInt(t.dataset.id),r=e.find(e=>e.id===n);r&&r.qty>1&&(r.qty--,u())})})}document.getElementById(`btn-add-item`)?.addEventListener(`click`,()=>{let n=parseInt(l.value);if(isNaN(n))return alert(`Select an item first`);let r=e.find(e=>e.id===n);if(r){r.qty++,u();return}let i=t.find(e=>e.id===n);i&&(e.push({id:i.id,name:i.item_name,hsn:i.hsn,qty:1,price:i.sale_price||0,gst:i.gst_rate||0}),u())}),document.getElementById(`btn-checkout`)?.addEventListener(`click`,async()=>{let t=parseInt(c.value);if(isNaN(t))return alert(`Select a customer first`);if(!e.length)return alert(`Add items to the invoice`);let n=document.getElementById(`btn-checkout`);n.disabled=!0,n.textContent=`Saving...`;try{let n={invoice_number:`INV-`+Date.now(),customer_id:t,subtotal:parseFloat(i.dataset.value)||0,total_gst:parseFloat(a.dataset.value)||0,grand_total:parseFloat(s.dataset.value)||0,merchant_id:localStorage.getItem(`merchant_id`)||1,items:e.map(e=>({id:e.id,item_name:e.name,qty:e.qty,price:e.price,gst_rate:e.gst,subtotal:e.qty*e.price}))};await o.createInvoice(n),window.location.hash=`#payment-success`}catch(e){alert(`Failed: `+e.message),n.disabled=!1,n.textContent=`Save & Preview`}}),u()};function m(){return`
     <div class="page-container">
       ${r(`Customers`)}
       
@@ -436,7 +475,7 @@
       
       ${n(`customers`)}
     </div>
-  `}p.init=async()=>{let e=document.getElementById(`customer-search`),t=document.getElementById(`customer-list-container`),n=[],r=e=>{if(!e.length){t.innerHTML=`<div style="padding: 1rem; text-align: center; color: var(--text-secondary);">No customers found.</div>`;return}t.innerHTML=e.map(e=>`
+  `}m.init=async()=>{let e=document.getElementById(`customer-search`),t=document.getElementById(`customer-list-container`),n=[],r=e=>{if(!e.length){t.innerHTML=`<div style="padding: 1rem; text-align: center; color: var(--text-secondary);">No customers found.</div>`;return}t.innerHTML=e.map(e=>`
       <div class="customer-item card mb-sm clickable-customer" data-id="${e.id}" data-name="${e.name}">
         <div class="flex justify-between items-center">
           <div class="flex items-center gap-md">
@@ -451,7 +490,7 @@
           </div>
         </div>
       </div>
-    `).join(``),document.querySelectorAll(`.clickable-customer`).forEach(e=>{e.addEventListener(`click`,()=>{localStorage.setItem(`selected_customer_id`,e.dataset.id),localStorage.setItem(`selected_customer_name`,e.dataset.name),window.location.hash=`#customers/ledger`})})};try{n=await o.getCustomers(),r(n)}catch{t.innerHTML=`<div style="padding: 1rem; text-align: center; color: var(--text-error);">Failed to load customers.</div>`}e?.addEventListener(`input`,e=>{let t=e.target.value.toLowerCase();r(n.filter(e=>e.name.toLowerCase().includes(t)))}),document.getElementById(`btn-add-customer-fab`)?.addEventListener(`click`,()=>{let e=prompt(`Enter customer name:`);if(e){let t=prompt(`Enter phone:`);o.addCustomer({name:e,phone:t,merchant_id:localStorage.getItem(`merchant_id`)||1}).then(()=>(alert(`Customer added`),o.getCustomers())).then(e=>{n=e,r(n)}).catch(e=>alert(`Failed: `+e.message))}})};function m(){return`
+    `).join(``),document.querySelectorAll(`.clickable-customer`).forEach(e=>{e.addEventListener(`click`,()=>{localStorage.setItem(`selected_customer_id`,e.dataset.id),localStorage.setItem(`selected_customer_name`,e.dataset.name),window.location.hash=`#customers/ledger`})})};try{n=await o.getCustomers(),r(n)}catch{t.innerHTML=`<div style="padding: 1rem; text-align: center; color: var(--text-error);">Failed to load customers.</div>`}e?.addEventListener(`input`,e=>{let t=e.target.value.toLowerCase();r(n.filter(e=>e.name.toLowerCase().includes(t)))}),document.getElementById(`btn-add-customer-fab`)?.addEventListener(`click`,()=>{let e=prompt(`Enter customer name:`);if(e){let t=prompt(`Enter phone:`);o.addCustomer({name:e,phone:t,merchant_id:localStorage.getItem(`merchant_id`)||1}).then(()=>(alert(`Customer added`),o.getCustomers())).then(e=>{n=e,r(n)}).catch(e=>alert(`Failed: `+e.message))}})};function h(){return`
     <div class="page-container">
       ${r(`Insights & Reports`)}
       
@@ -503,12 +542,12 @@
       
       ${n(`reports`)}
     </div>
-  `}m.init=async()=>{document.getElementById(`btn-reports-action`)?.addEventListener(`click`,()=>{window.location.hash=`#inventory/add`});try{let e=await o.getInvoices(),t=document.getElementById(`ai-insight-text`);if(t&&e&&e.length){let n=e[0];t.textContent=`You have ${e.length} total invoices on record. Latest invoice amount: ₹${n.grand_total}.`}let n=await o.getCustomers(),r=document.getElementById(`reports-customers`);r&&n&&n.length?r.innerHTML=n.slice(0,3).map(e=>`
+  `}h.init=async()=>{document.getElementById(`btn-reports-action`)?.addEventListener(`click`,()=>{window.location.hash=`#inventory/add`});try{let e=await o.getInvoices(),t=document.getElementById(`ai-insight-text`);if(t&&e&&e.length){let n=e[0];t.textContent=`You have ${e.length} total invoices on record. Latest invoice amount: ₹${n.grand_total}.`}let n=await o.getCustomers(),r=document.getElementById(`reports-customers`);r&&n&&n.length?r.innerHTML=n.slice(0,3).map(e=>`
          <div class="flex justify-between items-center mb-sm">
            <span class="text-sm">${e.name}</span>
            <span class="risk-badge low-risk">Low Risk</span>
          </div>
-       `).join(``):r&&(r.innerHTML=`<div class="text-xs text-secondary">No customers found</div>`)}catch(e){console.error(`Failed to load reports data`,e)}};function h(){let e=[{id:`business_profile`,label:`Business Profile`,icon:`<i class="ph ph-buildings"></i>`,sub:`Details, Logo, GSTIN`},{id:`staff`,label:`Staff Management`,icon:`<i class="ph ph-users"></i>`,sub:`Roles, Permissions`},{id:`printer`,label:`Printer Settings`,icon:`<i class="ph ph-printer"></i>`,sub:`Bluetooth, Thermal Printer`},{id:`language`,label:t(`app_language`),icon:`<i class="ph ph-globe"></i>`,sub:`English, Hindi, Telugu, etc.`},{id:`notifications`,label:`Notifications`,icon:`<i class="ph ph-bell"></i>`,sub:`Alerts, Reminders`},{id:`help`,label:`Help & Support`,icon:`<i class="ph ph-question"></i>`,sub:`FAQs, Contact Us`}];return`
+       `).join(``):r&&(r.innerHTML=`<div class="text-xs text-secondary">No customers found</div>`)}catch(e){console.error(`Failed to load reports data`,e)}};function g(){let e=[{id:`business_profile`,label:`Business Profile`,icon:`<i class="ph ph-buildings"></i>`,sub:`Details, Logo, GSTIN`},{id:`staff`,label:`Staff Management`,icon:`<i class="ph ph-users"></i>`,sub:`Roles, Permissions`},{id:`printer`,label:`Printer Settings`,icon:`<i class="ph ph-printer"></i>`,sub:`Bluetooth, Thermal Printer`},{id:`language`,label:t(`app_language`),icon:`<i class="ph ph-globe"></i>`,sub:`English, Hindi, Telugu, etc.`},{id:`notifications`,label:`Notifications`,icon:`<i class="ph ph-bell"></i>`,sub:`Alerts, Reminders`},{id:`help`,label:`Help & Support`,icon:`<i class="ph ph-question"></i>`,sub:`FAQs, Contact Us`}];return`
     <div class="page-container">
       ${r(`Settings`)}
       
@@ -546,7 +585,7 @@
       
       ${n(`settings`)}
     </div>
-  `}h.init=()=>{let e=document.querySelector(`.btn-outline.text-error`);e&&e.addEventListener(`click`,()=>{window.location.hash=`#login`})};function g(){return`
+  `}g.init=()=>{let e=document.querySelector(`.btn-outline.text-error`);e&&e.addEventListener(`click`,()=>{window.location.hash=`#login`})};function _(){return`
     <div class="page-container">
       <header class="app-header">
         <button class="icon-btn" onclick="window.history.back()">⬅️</button>
@@ -601,7 +640,7 @@
       </main>
       ${n(`settings`)}
     </div>
-  `}g.init=()=>{let e=document.querySelector(`.profile-form`);e&&e.addEventListener(`submit`,e=>{e.preventDefault(),alert(`Profile updated successfully!`),window.history.back()})};function _(){return`
+  `}_.init=()=>{let e=document.querySelector(`.profile-form`);e&&e.addEventListener(`submit`,e=>{e.preventDefault(),alert(`Profile updated successfully!`),window.history.back()})};function v(){return`
     <div class="page-container">
       <header class="app-header">
         <button class="icon-btn" onclick="window.history.back()">⬅️</button>
@@ -669,7 +708,7 @@
       </main>
       ${n(`settings`)}
     </div>
-  `}_.init=()=>{let e=document.querySelector(`.btn-outline.w-full`);e&&e.addEventListener(`click`,()=>{e.textContent=`⌛ Printing...`,e.disabled=!0,setTimeout(()=>{alert(`Test print successful! Check your TVS RP-3200 printer.`),e.textContent=`🖨️ Test Print`,e.disabled=!1},1500)})};function v(){return`
+  `}v.init=()=>{let e=document.querySelector(`.btn-outline.w-full`);e&&e.addEventListener(`click`,()=>{e.textContent=`⌛ Printing...`,e.disabled=!0,setTimeout(()=>{alert(`Test print successful! Check your TVS RP-3200 printer.`),e.textContent=`🖨️ Test Print`,e.disabled=!1},1500)})};function y(){return`
     <div class="page-container">
       <header class="app-header">
         <button class="icon-btn" onclick="window.history.back()">⬅️</button>
@@ -711,7 +750,7 @@
       </main>
       ${n(`settings`)}
     </div>
-  `}v.init=()=>{document.querySelector(`.btn-primary.btn-sm`)?.addEventListener(`click`,()=>{alert(`Add Staff Feature - Coming Soon!`)})};function y(){return`
+  `}y.init=()=>{document.querySelector(`.btn-primary.btn-sm`)?.addEventListener(`click`,()=>{alert(`Add Staff Feature - Coming Soon!`)})};function b(){return`
     <div class="scanner-container">
       <header class="app-header-transparent">
         <button class="icon-btn-white" onclick="window.history.back()">✕</button>
@@ -747,7 +786,7 @@
         </div>
       </div>
     </div>
-  `}y.init=()=>{let e=document.querySelector(`.recent-scans`),t=document.querySelector(`.scan-line`);e&&(e.style.display=`none`),setTimeout(()=>{e&&(e.style.display=`block`,e.classList.add(`animate-slide-up`)),t&&(t.style.animation=`none`)},2e3);let n=document.querySelector(`.recent-scans .btn-primary`);n&&n.addEventListener(`click`,()=>{window.location.hash=`#billing`})};function b(){return`
+  `}b.init=()=>{let e=document.querySelector(`.recent-scans`),t=document.querySelector(`.scan-line`);e&&(e.style.display=`none`),setTimeout(()=>{e&&(e.style.display=`block`,e.classList.add(`animate-slide-up`)),t&&(t.style.animation=`none`)},2e3);let n=document.querySelector(`.recent-scans .btn-primary`);n&&n.addEventListener(`click`,()=>{window.location.hash=`#billing`})};function x(){return`
     <div class="result-container success">
       <div class="result-card card text-center">
         <div class="success-icon-anim">✅</div>
@@ -775,7 +814,7 @@
         </div>
       </div>
     </div>
-  `}b.init=()=>{console.log(`Payment Success initialized`)};function x(){return`
+  `}x.init=()=>{console.log(`Payment Success initialized`)};function S(){return`
     <div class="page-container">
       <header class="app-header">
         <button class="icon-btn" onclick="window.history.back()"><i class="ph ph-arrow-left"></i></button>
@@ -818,7 +857,7 @@
       </main>
       ${n(`customers`)}
     </div>
-  `}x.init=async()=>{let e=localStorage.getItem(`selected_customer_id`),t=localStorage.getItem(`selected_customer_name`)||`Customer`;if(!e){alert(`No customer selected`),window.location.hash=`#customers`;return}document.getElementById(`c-ledger-name`).textContent=t;let n=document.getElementById(`ledger-list-container`),r=document.getElementById(`c-ledger-balance`),i=async()=>{try{let t=await o.getCustomerLedger(e);if(!t.length){n.innerHTML=`<div style="padding: 1rem; text-align: center; color: var(--text-secondary);">No transactions.</div>`,r.textContent=`₹ 0`,r.className=`text-xl font-bold`;return}let i=0;n.innerHTML=t.map(e=>(e.type===`gave`&&(i+=e.amount),e.type===`got`&&(i-=e.amount),`
+  `}S.init=async()=>{let e=localStorage.getItem(`selected_customer_id`),t=localStorage.getItem(`selected_customer_name`)||`Customer`;if(!e){alert(`No customer selected`),window.location.hash=`#customers`;return}document.getElementById(`c-ledger-name`).textContent=t;let n=document.getElementById(`ledger-list-container`),r=document.getElementById(`c-ledger-balance`),i=async()=>{try{let t=await o.getCustomerLedger(e);if(!t.length){n.innerHTML=`<div style="padding: 1rem; text-align: center; color: var(--text-secondary);">No transactions.</div>`,r.textContent=`₹ 0`,r.className=`text-xl font-bold`;return}let i=0;n.innerHTML=t.map(e=>(e.type===`gave`&&(i+=e.amount),e.type===`got`&&(i-=e.amount),`
           <div class="ledger-item card mb-sm">
             <div class="flex justify-between">
               <div>
@@ -833,7 +872,7 @@
               </div>
             </div>
           </div>
-        `)).join(``),r.textContent=`₹ ${i}`,r.className=`text-xl font-bold ${i>0?`text-error`:`text-success`}`}catch{n.innerHTML=`<div style="padding: 1rem; text-align: center; color: var(--text-error);">Failed to load.</div>`}};await i();let a=async n=>{let r=prompt(`Enter amount you ${n===`gave`?`gave to`:`got from`} ${t}:`);if(!r||isNaN(r))return;let a=prompt(`Enter description (optional):`)||``;try{await o.addLedgerEntry({customer_id:e,amount:parseFloat(r),type:n,description:a,merchant_id:localStorage.getItem(`merchant_id`)||1}),i()}catch(e){alert(`Failed: `+e.message)}};document.getElementById(`btn-ledger-gave`)?.addEventListener(`click`,()=>a(`gave`)),document.getElementById(`btn-ledger-got`)?.addEventListener(`click`,()=>a(`got`))};function S(){return`
+        `)).join(``),r.textContent=`₹ ${i}`,r.className=`text-xl font-bold ${i>0?`text-error`:`text-success`}`}catch{n.innerHTML=`<div style="padding: 1rem; text-align: center; color: var(--text-error);">Failed to load.</div>`}};await i();let a=async n=>{let r=prompt(`Enter amount you ${n===`gave`?`gave to`:`got from`} ${t}:`);if(!r||isNaN(r))return;let a=prompt(`Enter description (optional):`)||``;try{await o.addLedgerEntry({customer_id:e,amount:parseFloat(r),type:n,description:a,merchant_id:localStorage.getItem(`merchant_id`)||1}),i()}catch(e){alert(`Failed: `+e.message)}};document.getElementById(`btn-ledger-gave`)?.addEventListener(`click`,()=>a(`gave`)),document.getElementById(`btn-ledger-got`)?.addEventListener(`click`,()=>a(`got`))};function C(){return`
     <div class="onboarding-container">
       <div class="onboarding-carousel">
         ${[{title:`Smart Inventory`,desc:`Manage stock alerts and inventory with AI insights.`,icon:`📦`},{title:`Digital Invoicing`,desc:`Create and share GST invoices in seconds.`,icon:`🧾`},{title:`Customer Ledger`,desc:`Track udhar and get automated payment reminders.`,icon:`👥`}].map((e,t)=>`
@@ -856,7 +895,7 @@
         <button class="btn-text mt-md" onclick="window.location.hash='#login'">Existing User? Log In</button>
       </div>
     </div>
-  `}S.init=()=>{let e=document.querySelectorAll(`.onboarding-slide`),t=document.querySelectorAll(`.dot`),n=0;function r(n){e.forEach(e=>e.classList.remove(`active`)),t.forEach(e=>e.classList.remove(`active`)),e[n].classList.add(`active`),t[n].classList.add(`active`)}let i=setInterval(()=>{n=(n+1)%e.length,r(n)},3e3);t.forEach((e,t)=>{e.addEventListener(`click`,()=>{clearInterval(i),n=t,r(n)})}),window.addEventListener(`hashchange`,()=>clearInterval(i),{once:!0})};function C(){return`
+  `}C.init=()=>{let e=document.querySelectorAll(`.onboarding-slide`),t=document.querySelectorAll(`.dot`),n=0;function r(n){e.forEach(e=>e.classList.remove(`active`)),t.forEach(e=>e.classList.remove(`active`)),e[n].classList.add(`active`),t[n].classList.add(`active`)}let i=setInterval(()=>{n=(n+1)%e.length,r(n)},3e3);t.forEach((e,t)=>{e.addEventListener(`click`,()=>{clearInterval(i),n=t,r(n)})}),window.addEventListener(`hashchange`,()=>clearInterval(i),{once:!0})};function w(){return`
     <div class="page-container">
       <header class="app-header">
         <button class="icon-btn" onclick="window.history.back()"><i class="ph ph-arrow-left"></i></button>
@@ -904,7 +943,7 @@
       </main>
       ${n(`reports`)}
     </div>
-  `}C.init=()=>{let e=document.getElementById(`forecastChart`);e&&typeof Chart<`u`&&new Chart(e,{type:`line`,data:{labels:[`Jan`,`Feb`,`Mar`,`Apr`,`May (Est)`,`Jun (Pred)`],datasets:[{label:`Historical Sales`,data:[3e5,32e4,31e4,42e4,null,null],borderColor:`#303f9f`,segment:{borderDash:e=>[0,0]},tension:.3},{label:`Predicted Sales`,data:[null,null,null,42e4,48e4,512e3],borderColor:`#ff9800`,borderDash:[5,5],tension:.3}]},options:{responsive:!0,maintainAspectRatio:!1,plugins:{legend:{position:`bottom`,labels:{boxWidth:12}}},scales:{y:{beginAtZero:!0,ticks:{callback:e=>`₹`+e/1e3+`k`}}}}})};function w(){let e=[{code:`en`,name:`English`,native:`English`,icon:`🇺🇸`},{code:`hi`,name:`Hindi`,native:`हिन्दी`,icon:`🇮🇳`},{code:`te`,name:`Telugu`,native:`తెలుగు`,icon:`🇮🇳`},{code:`mr`,name:`Marathi`,native:`मराठी`,icon:`🇮🇳`},{code:`gu`,name:`Gujarati`,native:`ગુજરાતી`,icon:`🇮🇳`},{code:`ta`,name:`Tamil`,native:`தமிழ்`,icon:`🇮🇳`}],r=localStorage.getItem(`app_lang`)||`en`;return`
+  `}w.init=()=>{let e=document.getElementById(`forecastChart`);e&&typeof Chart<`u`&&new Chart(e,{type:`line`,data:{labels:[`Jan`,`Feb`,`Mar`,`Apr`,`May (Est)`,`Jun (Pred)`],datasets:[{label:`Historical Sales`,data:[3e5,32e4,31e4,42e4,null,null],borderColor:`#303f9f`,segment:{borderDash:e=>[0,0]},tension:.3},{label:`Predicted Sales`,data:[null,null,null,42e4,48e4,512e3],borderColor:`#ff9800`,borderDash:[5,5],tension:.3}]},options:{responsive:!0,maintainAspectRatio:!1,plugins:{legend:{position:`bottom`,labels:{boxWidth:12}}},scales:{y:{beginAtZero:!0,ticks:{callback:e=>`₹`+e/1e3+`k`}}}}})};function T(){let e=[{code:`en`,name:`English`,native:`English`,icon:`🇺🇸`},{code:`hi`,name:`Hindi`,native:`हिन्दी`,icon:`🇮🇳`},{code:`te`,name:`Telugu`,native:`తెలుగు`,icon:`🇮🇳`},{code:`mr`,name:`Marathi`,native:`मराठी`,icon:`🇮🇳`},{code:`gu`,name:`Gujarati`,native:`ગુજરાતી`,icon:`🇮🇳`},{code:`ta`,name:`Tamil`,native:`தமிழ்`,icon:`🇮🇳`}],r=localStorage.getItem(`app_lang`)||`en`;return`
     <div class="page-container">
       <header class="app-header">
         <button class="icon-btn" onclick="window.history.back()">⬅️</button>
@@ -938,7 +977,7 @@
       
       ${n(`settings`)}
     </div>
-  `}w.init=()=>{let e=localStorage.getItem(`app_lang`)||`en`,n=document.querySelectorAll(`.clickable-lang`),r=document.getElementById(`btn-save-language`);n.forEach(t=>{t.addEventListener(`click`,()=>{n.forEach(e=>e.querySelector(`.selection-indicator`).innerHTML=`<span class="text-secondary">○</span>`),t.querySelector(`.selection-indicator`).innerHTML=`<span class="text-success">● Selected</span>`,e=t.dataset.code})}),r?.addEventListener(`click`,()=>{localStorage.setItem(`app_lang`,e),alert(t(`save_apply`)+`!`),window.location.reload()})};function T(){return`
+  `}T.init=()=>{let e=localStorage.getItem(`app_lang`)||`en`,n=document.querySelectorAll(`.clickable-lang`),r=document.getElementById(`btn-save-language`);n.forEach(t=>{t.addEventListener(`click`,()=>{n.forEach(e=>e.querySelector(`.selection-indicator`).innerHTML=`<span class="text-secondary">○</span>`),t.querySelector(`.selection-indicator`).innerHTML=`<span class="text-success">● Selected</span>`,e=t.dataset.code})}),r?.addEventListener(`click`,()=>{localStorage.setItem(`app_lang`,e),alert(t(`save_apply`)+`!`),window.location.reload()})};function E(){return`
     <div class="page-container">
       <header class="app-header">
         <div class="flex items-center gap-sm">
@@ -1018,7 +1057,7 @@
 
       ${n(`reports`)}
     </div>
-  `}T.init=async()=>{let e=new Date().toISOString().split(`T`)[0],t=document.getElementById(`expense-modal`);t.style.display=`none`;let n=async e=>{try{let[t,n]=await Promise.all([o.getInvoices(),o.getExpenses()]),r=t.filter(t=>((t.created_at||``).split(`T`)[0]||(t.created_at||``).split(` `)[0])===e),i=n.filter(t=>((t.expense_date||``).split(`T`)[0]||(t.expense_date||``).split(` `)[0])===e),a=r.reduce((e,t)=>e+(t.grand_total||0),0),s=i.reduce((e,t)=>e+(t.amount||0),0),c=a-s;document.getElementById(`db-sales`).textContent=`₹ ${a.toLocaleString(`en-IN`,{minimumFractionDigits:2})}`,document.getElementById(`db-expenses`).textContent=`₹ ${s.toLocaleString(`en-IN`,{minimumFractionDigits:2})}`,document.getElementById(`db-profit`).textContent=`₹ ${c.toLocaleString(`en-IN`,{minimumFractionDigits:2})}`,document.getElementById(`db-profit`).style.color=c>=0?`#1b5e20`:`#b71c1c`,document.getElementById(`db-sales-count`).textContent=`${r.length} invoice${r.length===1?``:`s`}`;let l=document.getElementById(`db-invoices-list`);r.length===0?l.innerHTML=`<div class="text-secondary text-sm text-center p-md">No sales for this date.</div>`:l.innerHTML=r.map(e=>`
+  `}E.init=async()=>{let e=new Date().toISOString().split(`T`)[0],t=document.getElementById(`expense-modal`);t.style.display=`none`;let n=async e=>{try{let[t,n]=await Promise.all([o.getInvoices(),o.getExpenses()]),r=t.filter(t=>((t.created_at||``).split(`T`)[0]||(t.created_at||``).split(` `)[0])===e),i=n.filter(t=>((t.expense_date||``).split(`T`)[0]||(t.expense_date||``).split(` `)[0])===e),a=r.reduce((e,t)=>e+(t.grand_total||0),0),s=i.reduce((e,t)=>e+(t.amount||0),0),c=a-s;document.getElementById(`db-sales`).textContent=`₹ ${a.toLocaleString(`en-IN`,{minimumFractionDigits:2})}`,document.getElementById(`db-expenses`).textContent=`₹ ${s.toLocaleString(`en-IN`,{minimumFractionDigits:2})}`,document.getElementById(`db-profit`).textContent=`₹ ${c.toLocaleString(`en-IN`,{minimumFractionDigits:2})}`,document.getElementById(`db-profit`).style.color=c>=0?`#1b5e20`:`#b71c1c`,document.getElementById(`db-sales-count`).textContent=`${r.length} invoice${r.length===1?``:`s`}`;let l=document.getElementById(`db-invoices-list`);r.length===0?l.innerHTML=`<div class="text-secondary text-sm text-center p-md">No sales for this date.</div>`:l.innerHTML=r.map(e=>`
           <div class="flex justify-between items-center mb-sm" style="padding: 8px 0; border-bottom: 1px solid var(--border);">
             <div>
               <div class="font-medium text-sm">${e.invoice_number||`INV-`+e.id}</div>
@@ -1034,7 +1073,7 @@
             </div>
             <div class="font-bold text-error">- ₹ ${(e.amount||0).toLocaleString(`en-IN`)}</div>
           </div>
-        `).join(``)}catch(e){console.error(`Daybook load error:`,e)}};await n(e),document.getElementById(`daybook-date`)?.addEventListener(`change`,t=>{e=t.target.value,n(e)}),document.getElementById(`btn-add-expense`)?.addEventListener(`click`,()=>{t.style.display=`flex`}),document.getElementById(`btn-cancel-expense`)?.addEventListener(`click`,()=>{t.style.display=`none`}),document.getElementById(`btn-save-expense`)?.addEventListener(`click`,async()=>{let r=document.getElementById(`exp-desc`).value.trim(),i=parseFloat(document.getElementById(`exp-amount`).value),a=document.getElementById(`exp-cat`).value;if(!r||isNaN(i)||i<=0)return alert(`Please fill all fields.`);try{await o.addExpense({description:r,amount:i,category:a,payment_mode:`Cash`,expense_date:e,merchant_id:localStorage.getItem(`merchant_id`)||1}),t.style.display=`none`,await n(e)}catch(e){alert(`Failed to save: `+e.message)}})};function E(){return`
+        `).join(``)}catch(e){console.error(`Daybook load error:`,e)}};await n(e),document.getElementById(`daybook-date`)?.addEventListener(`change`,t=>{e=t.target.value,n(e)}),document.getElementById(`btn-add-expense`)?.addEventListener(`click`,()=>{t.style.display=`flex`}),document.getElementById(`btn-cancel-expense`)?.addEventListener(`click`,()=>{t.style.display=`none`}),document.getElementById(`btn-save-expense`)?.addEventListener(`click`,async()=>{let r=document.getElementById(`exp-desc`).value.trim(),i=parseFloat(document.getElementById(`exp-amount`).value),a=document.getElementById(`exp-cat`).value;if(!r||isNaN(i)||i<=0)return alert(`Please fill all fields.`);try{await o.addExpense({description:r,amount:i,category:a,payment_mode:`Cash`,expense_date:e,merchant_id:localStorage.getItem(`merchant_id`)||1}),t.style.display=`none`,await n(e)}catch(e){alert(`Failed to save: `+e.message)}})};function D(){return`
     <div class="page-container">
       <header class="app-header">
         <div class="flex items-center gap-sm">
@@ -1102,12 +1141,12 @@
 
       ${n(`reports`)}
     </div>
-  `}E.init=async()=>{let e=async e=>{try{let[t,n,r]=await Promise.all([o.getInvoices(),o.getExpenses(),fetch(`http://localhost:5001/api/ledger/all`).then(e=>e.ok?e.json():[]).catch(()=>[])]),i=new Date;i.setDate(i.getDate()-e);let a=t.filter(e=>new Date(e.created_at)>=i),s=n.filter(e=>new Date(e.expense_date)>=i),c=a.reduce((e,t)=>e+(t.subtotal||0),0),l=a.reduce((e,t)=>e+(t.total_gst||0),0),u=a.reduce((e,t)=>e+(t.grand_total||0),0),d=s.reduce((e,t)=>e+(t.amount||0),0),f=u-d,p=u>0?(f/u*100).toFixed(1):0,m=e=>`₹ ${e.toLocaleString(`en-IN`,{minimumFractionDigits:2})}`;document.getElementById(`pnl-gross-sales`).textContent=m(c),document.getElementById(`pnl-gst-collected`).textContent=m(l),document.getElementById(`pnl-total-revenue`).textContent=m(u),document.getElementById(`pnl-total-expenses`).textContent=m(d),document.getElementById(`pnl-net`).textContent=m(Math.abs(f)),document.getElementById(`pnl-margin`).textContent=`Margin: ${p}%`,document.getElementById(`pnl-banner`).style.background=f>=0?`linear-gradient(135deg, #2e7d32, #1b5e20)`:`linear-gradient(135deg, #c62828, #b71c1c)`,document.getElementById(`pnl-inv-count`).textContent=a.length;let h=a.length>0?u/a.length:0;document.getElementById(`pnl-avg-inv`).textContent=m(h);let g=new Set(a.map(e=>e.customer_id)).size;document.getElementById(`pnl-cust-count`).textContent=g;let _={};s.forEach(e=>{_[e.category||`Other`]=(_[e.category||`Other`]||0)+e.amount});let v=document.getElementById(`pnl-expense-breakdown`);Object.keys(_).length===0?v.innerHTML=`<div class="text-secondary text-sm text-center p-sm">No expenses in this period.</div>`:v.innerHTML=Object.entries(_).map(([e,t])=>`
+  `}D.init=async()=>{let e=async e=>{try{let[t,n,r]=await Promise.all([o.getInvoices(),o.getExpenses(),fetch(`http://localhost:5001/api/ledger/all`).then(e=>e.ok?e.json():[]).catch(()=>[])]),i=new Date;i.setDate(i.getDate()-e);let a=t.filter(e=>new Date(e.created_at)>=i),s=n.filter(e=>new Date(e.expense_date)>=i),c=a.reduce((e,t)=>e+(t.subtotal||0),0),l=a.reduce((e,t)=>e+(t.total_gst||0),0),u=a.reduce((e,t)=>e+(t.grand_total||0),0),d=s.reduce((e,t)=>e+(t.amount||0),0),f=u-d,p=u>0?(f/u*100).toFixed(1):0,m=e=>`₹ ${e.toLocaleString(`en-IN`,{minimumFractionDigits:2})}`;document.getElementById(`pnl-gross-sales`).textContent=m(c),document.getElementById(`pnl-gst-collected`).textContent=m(l),document.getElementById(`pnl-total-revenue`).textContent=m(u),document.getElementById(`pnl-total-expenses`).textContent=m(d),document.getElementById(`pnl-net`).textContent=m(Math.abs(f)),document.getElementById(`pnl-margin`).textContent=`Margin: ${p}%`,document.getElementById(`pnl-banner`).style.background=f>=0?`linear-gradient(135deg, #2e7d32, #1b5e20)`:`linear-gradient(135deg, #c62828, #b71c1c)`,document.getElementById(`pnl-inv-count`).textContent=a.length;let h=a.length>0?u/a.length:0;document.getElementById(`pnl-avg-inv`).textContent=m(h);let g=new Set(a.map(e=>e.customer_id)).size;document.getElementById(`pnl-cust-count`).textContent=g;let _={};s.forEach(e=>{_[e.category||`Other`]=(_[e.category||`Other`]||0)+e.amount});let v=document.getElementById(`pnl-expense-breakdown`);Object.keys(_).length===0?v.innerHTML=`<div class="text-secondary text-sm text-center p-sm">No expenses in this period.</div>`:v.innerHTML=Object.entries(_).map(([e,t])=>`
           <div class="flex justify-between mb-xs">
             <span class="text-sm">${e}</span>
             <span class="text-error font-medium">${m(t)}</span>
           </div>
-        `).join(``);try{let e=await o.getDashboardStats();document.getElementById(`pnl-udhar`).textContent=m(e.udharTotal||0)}catch{}}catch(e){console.error(`PnL load error:`,e)}};await e(30),document.getElementById(`pnl-period`)?.addEventListener(`change`,t=>e(parseInt(t.target.value)))};function D(){return`
+        `).join(``);try{let e=await o.getDashboardStats();document.getElementById(`pnl-udhar`).textContent=m(e.udharTotal||0)}catch{}}catch(e){console.error(`PnL load error:`,e)}};await e(30),document.getElementById(`pnl-period`)?.addEventListener(`change`,t=>e(parseInt(t.target.value)))};function O(){return`
     <div class="page-container">
       <header class="app-header">
         <div class="flex items-center gap-sm">
@@ -1169,7 +1208,7 @@
 
       ${n(`reports`)}
     </div>
-  `}D.init=async()=>{let e=async e=>{try{let t=await o.getInvoices(),n=new Date;n.setDate(n.getDate()-e);let r=t.filter(e=>new Date(e.created_at)>=n),i=r.filter(e=>(e.total_gst||0)>0),a=r.reduce((e,t)=>e+(t.total_gst||0),0);document.getElementById(`tax-total-gst`).textContent=`₹ ${a.toLocaleString(`en-IN`,{minimumFractionDigits:2})}`,document.getElementById(`tax-inv-count`).textContent=i.length;let s=document.getElementById(`tax-invoice-list`);r.length===0?s.innerHTML=`<div class="text-secondary text-sm text-center p-md">No invoices for this period.</div>`:s.innerHTML=r.map(e=>`
+  `}O.init=async()=>{let e=async e=>{try{let t=await o.getInvoices(),n=new Date;n.setDate(n.getDate()-e);let r=t.filter(e=>new Date(e.created_at)>=n),i=r.filter(e=>(e.total_gst||0)>0),a=r.reduce((e,t)=>e+(t.total_gst||0),0);document.getElementById(`tax-total-gst`).textContent=`₹ ${a.toLocaleString(`en-IN`,{minimumFractionDigits:2})}`,document.getElementById(`tax-inv-count`).textContent=i.length;let s=document.getElementById(`tax-invoice-list`);r.length===0?s.innerHTML=`<div class="text-secondary text-sm text-center p-md">No invoices for this period.</div>`:s.innerHTML=r.map(e=>`
           <div style="display:grid; grid-template-columns:1fr 1fr 1fr; font-size:12px; padding: 6px 0; border-bottom: 1px solid var(--border);">
             <span class="font-medium">${e.invoice_number||`INV-`+e.id}</span>
             <span>₹ ${(e.subtotal||0).toLocaleString(`en-IN`)}</span>
@@ -1192,7 +1231,7 @@
           <span class="text-sm"><span class="chip" style="background:#e8eaf6; color:#283593">18% GST</span></span>
           <span class="font-bold" style="color:#283593">₹ ${f.toLocaleString(`en-IN`,{minimumFractionDigits:2})}</span>
         </div>
-      `;let m=localStorage.getItem(`gstin`)||localStorage.getItem(`merchant_gstin`)||`—`;document.getElementById(`gstin-val`).textContent=m}catch(e){console.error(`Tax load error:`,e)}};await e(30),document.getElementById(`tax-period`)?.addEventListener(`change`,t=>e(parseInt(t.target.value)))};function O(){return`
+      `;let m=localStorage.getItem(`gstin`)||localStorage.getItem(`merchant_gstin`)||`—`;document.getElementById(`gstin-val`).textContent=m}catch(e){console.error(`Tax load error:`,e)}};await e(30),document.getElementById(`tax-period`)?.addEventListener(`change`,t=>e(parseInt(t.target.value)))};function k(){return`
     <div class="page-container">
       <header class="app-header">
         <div class="flex items-center gap-sm">
@@ -1257,7 +1296,7 @@
 
       ${n(``)}
     </div>
-  `}O.init=async()=>{document.getElementById(`btn-mark-all`)?.addEventListener(`click`,()=>{document.querySelectorAll(`.notif-item`).forEach(e=>{e.style.opacity=`0.65`,e.style.borderLeft=``;let t=e.querySelector(`.unread-dot`);t&&t.remove()})});try{let[e,t]=await Promise.all([o.getInventory(),o.getDashboardStats()]),n=document.getElementById(`notif-live-alerts`),r=e.filter(e=>e.stock_level<10),i=t.udharTotal||0,a=``;i>0&&(a+=`
+  `}k.init=async()=>{document.getElementById(`btn-mark-all`)?.addEventListener(`click`,()=>{document.querySelectorAll(`.notif-item`).forEach(e=>{e.style.opacity=`0.65`,e.style.borderLeft=``;let t=e.querySelector(`.unread-dot`);t&&t.remove()})});try{let[e,t]=await Promise.all([o.getInventory(),o.getDashboardStats()]),n=document.getElementById(`notif-live-alerts`),r=e.filter(e=>e.stock_level<10),i=t.udharTotal||0,a=``;i>0&&(a+=`
         <div class="card mb-sm" style="border-left: 4px solid var(--warning);">
           <div class="flex items-center gap-sm">
             <div style="width:36px; height:36px; border-radius:50%; background:#fff3e0; display:flex; align-items:center; justify-content:center;">
@@ -1281,7 +1320,7 @@
               </div>
             </div>
           </div>
-        `}),a||=`<div class="card text-center p-md"><i class="ph ph-check-circle text-success" style="font-size:28px;"></i><div class="text-sm mt-sm text-secondary">All clear! No critical alerts.</div></div>`,n.innerHTML=a}catch(e){console.error(`Notifications load error:`,e)}};function k(){return`
+        `}),a||=`<div class="card text-center p-md"><i class="ph ph-check-circle text-success" style="font-size:28px;"></i><div class="text-sm mt-sm text-secondary">All clear! No critical alerts.</div></div>`,n.innerHTML=a}catch(e){console.error(`Notifications load error:`,e)}};function A(){return`
     <div class="page-container">
       <header class="app-header">
         <div class="flex items-center gap-sm">
@@ -1352,4 +1391,4 @@
 
       ${n(``)}
     </div>
-  `}k.init=()=>{document.querySelectorAll(`.faq-item button`).forEach(e=>{e.addEventListener(`click`,()=>{let t=e.parentElement,n=t.querySelector(`.faq-answer`),r=t.querySelector(`.faq-caret`),i=t.classList.contains(`open`);n.style.display=i?`none`:`block`,r.style.transform=i?``:`rotate(180deg)`})}),document.getElementById(`faq-search`)?.addEventListener(`input`,e=>{let t=e.target.value.toLowerCase();document.querySelectorAll(`.faq-item`).forEach(e=>{let n=e.querySelector(`.font-medium`).textContent.toLowerCase();e.style.display=n.includes(t)?``:`none`})})};var A={"":S,"#onboarding":S,"#login":s,"#otp":c,"#dashboard":l,"#customers":p,"#billing":f,"#inventory":u,"#inventory/add":d,"#reports":m,"#reports/daybook":T,"#reports/pnl":E,"#reports/tax":D,"#reports/forecast":C,"#settings":h,"#settings/business_profile":g,"#settings/printer":_,"#settings/staff":v,"#settings/notifications":O,"#settings/help":k,"#scanner":y,"#payment-success":b,"#customers/ledger":x,"#settings/language":w};function j(){let e=document.querySelector(`#app`),t=window.location.hash||``;console.log(`Routing to:`,t);let n=A[t];n||=A[Object.keys(A).find(e=>!!(e.includes(`:`)&&t.startsWith(e.split(`:`)[0])||e!==``&&t.startsWith(e)))]||A[``],n||=A[``],e.innerHTML=n(),n.init&&n.init(),document.querySelectorAll(`.nav-item`).forEach(e=>{let n=e.getAttribute(`href`);n&&(t===n||t.startsWith(n)&&n!==`#`)?e.classList.add(`active`):e.classList.remove(`active`)})}window.addEventListener(`hashchange`,j),window.addEventListener(`load`,j);
+  `}A.init=()=>{document.querySelectorAll(`.faq-item button`).forEach(e=>{e.addEventListener(`click`,()=>{let t=e.parentElement,n=t.querySelector(`.faq-answer`),r=t.querySelector(`.faq-caret`),i=t.classList.contains(`open`);n.style.display=i?`none`:`block`,r.style.transform=i?``:`rotate(180deg)`})}),document.getElementById(`faq-search`)?.addEventListener(`input`,e=>{let t=e.target.value.toLowerCase();document.querySelectorAll(`.faq-item`).forEach(e=>{let n=e.querySelector(`.font-medium`).textContent.toLowerCase();e.style.display=n.includes(t)?``:`none`})})};var j={"":C,"#onboarding":C,"#login":s,"#register":c,"#otp":l,"#dashboard":u,"#customers":m,"#billing":p,"#inventory":d,"#inventory/add":f,"#reports":h,"#reports/daybook":E,"#reports/pnl":D,"#reports/tax":O,"#reports/forecast":w,"#settings":g,"#settings/business_profile":_,"#settings/printer":v,"#settings/staff":y,"#settings/notifications":k,"#settings/help":A,"#scanner":b,"#payment-success":x,"#customers/ledger":S,"#settings/language":T};function M(){let e=document.querySelector(`#app`),t=window.location.hash||``;console.log(`Routing to:`,t);let n=j[t];n||=j[Object.keys(j).find(e=>!!(e.includes(`:`)&&t.startsWith(e.split(`:`)[0])||e!==``&&t.startsWith(e)))]||j[``],n||=j[``],e.innerHTML=n(),n.init&&n.init(),document.querySelectorAll(`.nav-item`).forEach(e=>{let n=e.getAttribute(`href`);n&&(t===n||t.startsWith(n)&&n!==`#`)?e.classList.add(`active`):e.classList.remove(`active`)})}window.addEventListener(`hashchange`,M),window.addEventListener(`load`,M);
