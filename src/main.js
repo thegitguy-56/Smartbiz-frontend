@@ -12,7 +12,7 @@ import './styles/results.css';
 import './styles/onboarding.css';
 
 import { Navigation } from './components/Navigation';
-import { LoginPage } from './pages/Auth';
+import { LoginPage, RegisterPage } from './pages/Auth';
 import { OTPPage } from './pages/OTP';
 import { DashboardPage } from './pages/Dashboard';
 import { InventoryPage } from './pages/Inventory';
@@ -60,6 +60,7 @@ const routes = {
   '': OnboardingPage,
   '#onboarding': OnboardingPage,
   '#login': LoginPage,
+  '#register': RegisterPage,
   '#otp': OTPPage,
   '#dashboard': DashboardPage,
   '#customers': CustomersPage,
