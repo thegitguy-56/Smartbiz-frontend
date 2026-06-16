@@ -1,0 +1,544 @@
+{"timestamp": "2026-06-16T03:16:21.978493Z", "level": "INFO", "message": "WebDriver session started"}
+{"timestamp": "2026-06-16T03:16:27.804725Z", "level": "INFO", "message": "Navigated to Onboarding page"}
+{"timestamp": "2026-06-16T03:16:27.811735Z", "level": "INFO", "message": "TC-ONB-001 PASSED: Page loaded successfully"}
+{"timestamp": "2026-06-16T03:16:30.036834Z", "level": "INFO", "message": "WebDriver session closed"}
+{"timestamp": "2026-06-16T03:16:33.395099Z", "level": "INFO", "message": "WebDriver session started"}
+{"timestamp": "2026-06-16T03:16:40.839527Z", "level": "INFO", "message": "Navigated to Onboarding page"}
+{"timestamp": "2026-06-16T03:16:40.865426Z", "level": "INFO", "message": "TC-ONB-002 PASSED: Title matches"}
+{"timestamp": "2026-06-16T03:16:43.077946Z", "level": "INFO", "message": "WebDriver session closed"}
+{"timestamp": "2026-06-16T03:16:46.348864Z", "level": "INFO", "message": "WebDriver session started"}
+{"timestamp": "2026-06-16T03:16:53.298098Z", "level": "INFO", "message": "Navigated to Onboarding page"}
+{"timestamp": "2026-06-16T03:16:53.310271Z", "level": "INFO", "message": "TC-ONB-003 PASSED: Container rendered"}
+{"timestamp": "2026-06-16T03:16:55.496650Z", "level": "INFO", "message": "WebDriver session closed"}
+{"timestamp": "2026-06-16T03:16:58.769101Z", "level": "INFO", "message": "WebDriver session started"}
+{"timestamp": "2026-06-16T03:17:04.542639Z", "level": "INFO", "message": "Navigated to Onboarding page"}
+{"timestamp": "2026-06-16T03:17:04.874760Z", "level": "INFO", "message": "Screenshot saved: test_slide_smart_inventory_visible_031704.png"}
+{"timestamp": "2026-06-16T03:17:07.070897Z", "level": "INFO", "message": "WebDriver session closed"}
+{"timestamp": "2026-06-16T03:17:10.294717Z", "level": "INFO", "message": "WebDriver session started"}
+{"timestamp": "2026-06-16T03:17:15.741397Z", "level": "INFO", "message": "Navigated to Onboarding page"}
+{"timestamp": "2026-06-16T03:17:15.742395Z", "level": "INFO", "message": "TC-ONB-005 PASSED: Digital Invoicing slide present"}
+{"timestamp": "2026-06-16T03:17:17.954471Z", "level": "INFO", "message": "WebDriver session closed"}
+{"timestamp": "2026-06-16T03:17:21.213776Z", "level": "INFO", "message": "WebDriver session started"}
+{"timestamp": "2026-06-16T03:17:26.626113Z", "level": "INFO", "message": "Navigated to Onboarding page"}
+{"timestamp": "2026-06-16T03:17:26.690178Z", "level": "INFO", "message": "Screenshot saved: test_slide_customer_ledger_visible_031726.png"}
+{"timestamp": "2026-06-16T03:17:28.886567Z", "level": "INFO", "message": "WebDriver session closed"}
+{"timestamp": "2026-06-16T03:17:32.110779Z", "level": "INFO", "message": "WebDriver session started"}
+{"timestamp": "2026-06-16T03:17:37.774059Z", "level": "INFO", "message": "Navigated to Onboarding page"}
+{"timestamp": "2026-06-16T03:17:37.816576Z", "level": "INFO", "message": "TC-ONB-007 PASSED: 3 slides present"}
+{"timestamp": "2026-06-16T03:17:40.021479Z", "level": "INFO", "message": "WebDriver session closed"}
+{"timestamp": "2026-06-16T03:17:43.230534Z", "level": "INFO", "message": "WebDriver session started"}
+{"timestamp": "2026-06-16T03:17:49.055933Z", "level": "INFO", "message": "Navigated to Onboarding page"}
+{"timestamp": "2026-06-16T03:17:49.069048Z", "level": "INFO", "message": "TC-ONB-008 PASSED: 3 dots present"}
+{"timestamp": "2026-06-16T03:17:51.267000Z", "level": "INFO", "message": "WebDriver session closed"}
+{"timestamp": "2026-06-16T03:17:54.563869Z", "level": "INFO", "message": "WebDriver session started"}
+{"timestamp": "2026-06-16T03:18:00.305223Z", "level": "INFO", "message": "Navigated to Onboarding page"}
+{"timestamp": "2026-06-16T03:18:00.473375Z", "level": "INFO", "message": "Screenshot saved: test_first_dot_is_active_031800.png"}
+{"timestamp": "2026-06-16T03:18:02.679932Z", "level": "INFO", "message": "WebDriver session closed"}
+{"timestamp": "2026-06-16T03:18:05.969060Z", "level": "INFO", "message": "WebDriver session started"}
+{"timestamp": "2026-06-16T03:18:12.217057Z", "level": "INFO", "message": "Navigated to Onboarding page"}
+{"timestamp": "2026-06-16T03:18:12.218059Z", "level": "INFO", "message": "TC-ONB-010 PASSED: Get Started button visible"}
+{"timestamp": "2026-06-16T03:18:14.410962Z", "level": "INFO", "message": "WebDriver session closed"}
+{"timestamp": "2026-06-16T03:18:17.647450Z", "level": "INFO", "message": "WebDriver session started"}
+{"timestamp": "2026-06-16T03:18:24.723798Z", "level": "INFO", "message": "Navigated to Onboarding page"}
+{"timestamp": "2026-06-16T03:18:26.837526Z", "level": "INFO", "message": "TC-ONB-011 PASSED: Navigated to login"}
+{"timestamp": "2026-06-16T03:18:29.039984Z", "level": "INFO", "message": "WebDriver session closed"}
+{"timestamp": "2026-06-16T03:18:32.297446Z", "level": "INFO", "message": "WebDriver session started"}
+{"timestamp": "2026-06-16T03:18:38.117815Z", "level": "INFO", "message": "Navigated to Onboarding page"}
+{"timestamp": "2026-06-16T03:18:45.251453Z", "level": "INFO", "message": "TC-ONB-012 PASSED: Existing user link works"}
+{"timestamp": "2026-06-16T03:18:47.456931Z", "level": "INFO", "message": "WebDriver session closed"}
+{"timestamp": "2026-06-16T03:18:50.778167Z", "level": "INFO", "message": "WebDriver session started"}
+{"timestamp": "2026-06-16T03:18:56.257524Z", "level": "INFO", "message": "Navigated to Onboarding page"}
+{"timestamp": "2026-06-16T03:19:01.308292Z", "level": "INFO", "message": "TC-ONB-013 PASSED: Icons rendered"}
+{"timestamp": "2026-06-16T03:19:03.558863Z", "level": "INFO", "message": "WebDriver session closed"}
+{"timestamp": "2026-06-16T03:19:06.802918Z", "level": "INFO", "message": "WebDriver session started"}
+{"timestamp": "2026-06-16T03:19:13.006600Z", "level": "INFO", "message": "Navigated to Onboarding page"}
+{"timestamp": "2026-06-16T03:19:18.101470Z", "level": "INFO", "message": "Screenshot saved: test_slide_descriptions_present_031918.png"}
+{"timestamp": "2026-06-16T03:19:20.318236Z", "level": "INFO", "message": "WebDriver session closed"}
+{"timestamp": "2026-06-16T03:19:23.584784Z", "level": "INFO", "message": "WebDriver session started"}
+{"timestamp": "2026-06-16T03:19:29.904590Z", "level": "INFO", "message": "Navigated to Login page"}
+{"timestamp": "2026-06-16T03:19:29.917244Z", "level": "INFO", "message": "TC-LOG-001 PASSED: Login form visible"}
+{"timestamp": "2026-06-16T03:19:32.112805Z", "level": "INFO", "message": "WebDriver session closed"}
+{"timestamp": "2026-06-16T03:19:35.444065Z", "level": "INFO", "message": "WebDriver session started"}
+{"timestamp": "2026-06-16T03:19:41.048535Z", "level": "INFO", "message": "Navigated to Login page"}
+{"timestamp": "2026-06-16T03:19:41.061263Z", "level": "INFO", "message": "TC-LOG-002 PASSED: Email input present"}
+{"timestamp": "2026-06-16T03:19:43.280507Z", "level": "INFO", "message": "WebDriver session closed"}
+{"timestamp": "2026-06-16T03:19:46.534782Z", "level": "INFO", "message": "WebDriver session started"}
+{"timestamp": "2026-06-16T03:19:51.895592Z", "level": "INFO", "message": "Navigated to Login page"}
+{"timestamp": "2026-06-16T03:19:51.908959Z", "level": "INFO", "message": "TC-LOG-003 PASSED: Password input present"}
+{"timestamp": "2026-06-16T03:19:54.098716Z", "level": "INFO", "message": "WebDriver session closed"}
+{"timestamp": "2026-06-16T03:19:57.319899Z", "level": "INFO", "message": "WebDriver session started"}
+{"timestamp": "2026-06-16T03:20:03.178685Z", "level": "INFO", "message": "Navigated to Login page"}
+{"timestamp": "2026-06-16T03:20:03.179688Z", "level": "INFO", "message": "TC-LOG-004 PASSED: SB logo displayed"}
+{"timestamp": "2026-06-16T03:20:05.383383Z", "level": "INFO", "message": "WebDriver session closed"}
+{"timestamp": "2026-06-16T03:20:08.653640Z", "level": "INFO", "message": "WebDriver session started"}
+{"timestamp": "2026-06-16T03:20:14.096401Z", "level": "INFO", "message": "Navigated to Login page"}
+{"timestamp": "2026-06-16T03:20:14.097449Z", "level": "INFO", "message": "TC-LOG-005 PASSED: Login heading text present"}
+{"timestamp": "2026-06-16T03:20:16.286005Z", "level": "INFO", "message": "WebDriver session closed"}
+{"timestamp": "2026-06-16T03:20:19.512830Z", "level": "INFO", "message": "WebDriver session started"}
+{"timestamp": "2026-06-16T03:20:25.117882Z", "level": "INFO", "message": "Navigated to Login page"}
+{"timestamp": "2026-06-16T03:20:25.136923Z", "level": "INFO", "message": "TC-LOG-006 PASSED: Pre-filled email correct"}
+{"timestamp": "2026-06-16T03:20:27.342166Z", "level": "INFO", "message": "WebDriver session closed"}
+{"timestamp": "2026-06-16T03:20:30.542155Z", "level": "INFO", "message": "WebDriver session started"}
+{"timestamp": "2026-06-16T03:20:36.467414Z", "level": "INFO", "message": "Navigated to Login page"}
+{"timestamp": "2026-06-16T03:20:36.487061Z", "level": "INFO", "message": "TC-LOG-007 PASSED: Pre-filled password correct"}
+{"timestamp": "2026-06-16T03:20:38.683679Z", "level": "INFO", "message": "WebDriver session closed"}
+{"timestamp": "2026-06-16T03:21:22.107475Z", "level": "INFO", "message": "WebDriver session started"}
+{"timestamp": "2026-06-16T03:21:29.851246Z", "level": "INFO", "message": "Navigated to Onboarding page"}
+{"timestamp": "2026-06-16T03:21:29.857246Z", "level": "INFO", "message": "TC-ONB-001 PASSED: Page loaded successfully"}
+{"timestamp": "2026-06-16T03:21:32.052902Z", "level": "INFO", "message": "WebDriver session closed"}
+{"timestamp": "2026-06-16T03:21:35.359187Z", "level": "INFO", "message": "WebDriver session started"}
+{"timestamp": "2026-06-16T03:21:40.921129Z", "level": "INFO", "message": "Navigated to Onboarding page"}
+{"timestamp": "2026-06-16T03:21:40.928275Z", "level": "INFO", "message": "TC-ONB-002 PASSED: Title matches"}
+{"timestamp": "2026-06-16T03:21:43.121823Z", "level": "INFO", "message": "WebDriver session closed"}
+{"timestamp": "2026-06-16T03:21:46.385660Z", "level": "INFO", "message": "WebDriver session started"}
+{"timestamp": "2026-06-16T03:21:52.208271Z", "level": "INFO", "message": "Navigated to Onboarding page"}
+{"timestamp": "2026-06-16T03:21:52.221275Z", "level": "INFO", "message": "TC-ONB-003 PASSED: Container rendered"}
+{"timestamp": "2026-06-16T03:21:54.434113Z", "level": "INFO", "message": "WebDriver session closed"}
+{"timestamp": "2026-06-16T03:21:57.758129Z", "level": "INFO", "message": "WebDriver session started"}
+{"timestamp": "2026-06-16T03:22:03.768004Z", "level": "INFO", "message": "Navigated to Onboarding page"}
+{"timestamp": "2026-06-16T03:22:04.046234Z", "level": "INFO", "message": "Screenshot saved: test_slide_smart_inventory_visible_032204.png"}
+{"timestamp": "2026-06-16T03:22:06.245475Z", "level": "INFO", "message": "WebDriver session closed"}
+{"timestamp": "2026-06-16T03:22:09.518193Z", "level": "INFO", "message": "WebDriver session started"}
+{"timestamp": "2026-06-16T03:22:15.086760Z", "level": "INFO", "message": "Navigated to Onboarding page"}
+{"timestamp": "2026-06-16T03:22:15.087757Z", "level": "INFO", "message": "TC-ONB-005 PASSED: Digital Invoicing slide present"}
+{"timestamp": "2026-06-16T03:22:17.287996Z", "level": "INFO", "message": "WebDriver session closed"}
+{"timestamp": "2026-06-16T03:22:20.591776Z", "level": "INFO", "message": "WebDriver session started"}
+{"timestamp": "2026-06-16T03:22:26.015094Z", "level": "INFO", "message": "Navigated to Onboarding page"}
+{"timestamp": "2026-06-16T03:22:26.062271Z", "level": "INFO", "message": "Screenshot saved: test_slide_customer_ledger_visible_032226.png"}
+{"timestamp": "2026-06-16T03:22:28.267450Z", "level": "INFO", "message": "WebDriver session closed"}
+{"timestamp": "2026-06-16T03:22:31.565853Z", "level": "INFO", "message": "WebDriver session started"}
+{"timestamp": "2026-06-16T03:22:37.193840Z", "level": "INFO", "message": "Navigated to Onboarding page"}
+{"timestamp": "2026-06-16T03:22:37.208248Z", "level": "INFO", "message": "TC-ONB-007 PASSED: 3 slides present"}
+{"timestamp": "2026-06-16T03:22:39.406641Z", "level": "INFO", "message": "WebDriver session closed"}
+{"timestamp": "2026-06-16T03:22:42.676435Z", "level": "INFO", "message": "WebDriver session started"}
+{"timestamp": "2026-06-16T03:22:48.347348Z", "level": "INFO", "message": "Navigated to Onboarding page"}
+{"timestamp": "2026-06-16T03:22:48.360018Z", "level": "INFO", "message": "TC-ONB-008 PASSED: 3 dots present"}
+{"timestamp": "2026-06-16T03:22:50.575282Z", "level": "INFO", "message": "WebDriver session closed"}
+{"timestamp": "2026-06-16T03:22:53.726875Z", "level": "INFO", "message": "WebDriver session started"}
+{"timestamp": "2026-06-16T03:23:00.225747Z", "level": "INFO", "message": "Navigated to Onboarding page"}
+{"timestamp": "2026-06-16T03:23:00.274506Z", "level": "INFO", "message": "Screenshot saved: test_first_dot_is_active_032300.png"}
+{"timestamp": "2026-06-16T03:23:02.479504Z", "level": "INFO", "message": "WebDriver session closed"}
+{"timestamp": "2026-06-16T03:23:05.619025Z", "level": "INFO", "message": "WebDriver session started"}
+{"timestamp": "2026-06-16T03:23:11.283464Z", "level": "INFO", "message": "Navigated to Onboarding page"}
+{"timestamp": "2026-06-16T03:23:11.284464Z", "level": "INFO", "message": "TC-ONB-010 PASSED: Get Started button visible"}
+{"timestamp": "2026-06-16T03:23:13.472695Z", "level": "INFO", "message": "WebDriver session closed"}
+{"timestamp": "2026-06-16T03:23:16.618793Z", "level": "INFO", "message": "WebDriver session started"}
+{"timestamp": "2026-06-16T03:23:21.987120Z", "level": "INFO", "message": "Navigated to Onboarding page"}
+{"timestamp": "2026-06-16T03:23:24.089335Z", "level": "INFO", "message": "TC-ONB-011 PASSED: Navigated to login"}
+{"timestamp": "2026-06-16T03:23:26.306518Z", "level": "INFO", "message": "WebDriver session closed"}
+{"timestamp": "2026-06-16T03:23:29.410140Z", "level": "INFO", "message": "WebDriver session started"}
+{"timestamp": "2026-06-16T03:23:35.625632Z", "level": "INFO", "message": "Navigated to Onboarding page"}
+{"timestamp": "2026-06-16T03:23:42.775339Z", "level": "INFO", "message": "TC-ONB-012 PASSED: Existing user link works"}
+{"timestamp": "2026-06-16T03:23:45.043643Z", "level": "INFO", "message": "WebDriver session closed"}
+{"timestamp": "2026-06-16T03:23:48.458324Z", "level": "INFO", "message": "WebDriver session started"}
+{"timestamp": "2026-06-16T03:23:54.338028Z", "level": "INFO", "message": "Navigated to Onboarding page"}
+{"timestamp": "2026-06-16T03:23:59.458089Z", "level": "INFO", "message": "TC-ONB-013 PASSED: Icons rendered"}
+{"timestamp": "2026-06-16T03:24:01.723414Z", "level": "INFO", "message": "WebDriver session closed"}
+{"timestamp": "2026-06-16T03:24:05.560498Z", "level": "INFO", "message": "WebDriver session started"}
+{"timestamp": "2026-06-16T03:24:10.978496Z", "level": "INFO", "message": "Navigated to Onboarding page"}
+{"timestamp": "2026-06-16T03:24:16.090122Z", "level": "INFO", "message": "Screenshot saved: test_slide_descriptions_present_032416.png"}
+{"timestamp": "2026-06-16T03:24:18.300873Z", "level": "INFO", "message": "WebDriver session closed"}
+{"timestamp": "2026-06-16T03:24:21.738920Z", "level": "INFO", "message": "WebDriver session started"}
+{"timestamp": "2026-06-16T03:24:27.451780Z", "level": "INFO", "message": "Navigated to Login page"}
+{"timestamp": "2026-06-16T03:24:27.462520Z", "level": "INFO", "message": "TC-LOG-001 PASSED: Login form visible"}
+{"timestamp": "2026-06-16T03:24:29.665441Z", "level": "INFO", "message": "WebDriver session closed"}
+{"timestamp": "2026-06-16T03:24:32.832982Z", "level": "INFO", "message": "WebDriver session started"}
+{"timestamp": "2026-06-16T03:24:38.334243Z", "level": "INFO", "message": "Navigated to Login page"}
+{"timestamp": "2026-06-16T03:24:38.345245Z", "level": "INFO", "message": "TC-LOG-002 PASSED: Email input present"}
+{"timestamp": "2026-06-16T03:24:40.527845Z", "level": "INFO", "message": "WebDriver session closed"}
+{"timestamp": "2026-06-16T03:24:43.656872Z", "level": "INFO", "message": "WebDriver session started"}
+{"timestamp": "2026-06-16T03:24:49.680053Z", "level": "INFO", "message": "Navigated to Login page"}
+{"timestamp": "2026-06-16T03:24:49.692607Z", "level": "INFO", "message": "TC-LOG-003 PASSED: Password input present"}
+{"timestamp": "2026-06-16T03:24:51.874697Z", "level": "INFO", "message": "WebDriver session closed"}
+{"timestamp": "2026-06-16T03:24:55.024502Z", "level": "INFO", "message": "WebDriver session started"}
+{"timestamp": "2026-06-16T03:25:00.433654Z", "level": "INFO", "message": "Navigated to Login page"}
+{"timestamp": "2026-06-16T03:25:00.434647Z", "level": "INFO", "message": "TC-LOG-004 PASSED: SB logo displayed"}
+{"timestamp": "2026-06-16T03:25:02.620054Z", "level": "INFO", "message": "WebDriver session closed"}
+{"timestamp": "2026-06-16T03:25:05.760393Z", "level": "INFO", "message": "WebDriver session started"}
+{"timestamp": "2026-06-16T03:25:11.590177Z", "level": "INFO", "message": "Navigated to Login page"}
+{"timestamp": "2026-06-16T03:25:11.591178Z", "level": "INFO", "message": "TC-LOG-005 PASSED: Login heading text present"}
+{"timestamp": "2026-06-16T03:25:13.757003Z", "level": "INFO", "message": "WebDriver session closed"}
+{"timestamp": "2026-06-16T03:25:16.954789Z", "level": "INFO", "message": "WebDriver session started"}
+{"timestamp": "2026-06-16T03:25:23.078331Z", "level": "INFO", "message": "Navigated to Login page"}
+{"timestamp": "2026-06-16T03:25:23.098337Z", "level": "INFO", "message": "TC-LOG-006 PASSED: Pre-filled email correct"}
+{"timestamp": "2026-06-16T03:25:25.298326Z", "level": "INFO", "message": "WebDriver session closed"}
+{"timestamp": "2026-06-16T03:25:28.725399Z", "level": "INFO", "message": "WebDriver session started"}
+{"timestamp": "2026-06-16T03:25:36.200354Z", "level": "INFO", "message": "Navigated to Login page"}
+{"timestamp": "2026-06-16T03:25:36.220161Z", "level": "INFO", "message": "TC-LOG-007 PASSED: Pre-filled password correct"}
+{"timestamp": "2026-06-16T03:25:38.518510Z", "level": "INFO", "message": "WebDriver session closed"}
+{"timestamp": "2026-06-16T03:25:41.910049Z", "level": "INFO", "message": "WebDriver session started"}
+{"timestamp": "2026-06-16T03:25:49.179173Z", "level": "INFO", "message": "Navigated to Login page"}
+{"timestamp": "2026-06-16T03:25:49.196906Z", "level": "INFO", "message": "TC-LOG-008 PASSED: Password field is masked"}
+{"timestamp": "2026-06-16T03:25:51.461847Z", "level": "INFO", "message": "WebDriver session closed"}
+{"timestamp": "2026-06-16T03:25:54.599495Z", "level": "INFO", "message": "WebDriver session started"}
+{"timestamp": "2026-06-16T03:26:01.238263Z", "level": "INFO", "message": "Navigated to Login page"}
+{"timestamp": "2026-06-16T03:26:01.255665Z", "level": "INFO", "message": "TC-LOG-009 PASSED: Password maxlength is 4"}
+{"timestamp": "2026-06-16T03:26:03.408778Z", "level": "INFO", "message": "WebDriver session closed"}
+{"timestamp": "2026-06-16T03:26:06.514004Z", "level": "INFO", "message": "WebDriver session started"}
+{"timestamp": "2026-06-16T03:26:13.123919Z", "level": "INFO", "message": "Navigated to Login page"}
+{"timestamp": "2026-06-16T03:26:13.124919Z", "level": "INFO", "message": "TC-LOG-010 PASSED: Submit button text correct"}
+{"timestamp": "2026-06-16T03:26:15.316731Z", "level": "INFO", "message": "WebDriver session closed"}
+{"timestamp": "2026-06-16T03:26:18.536963Z", "level": "INFO", "message": "WebDriver session started"}
+{"timestamp": "2026-06-16T03:26:25.394310Z", "level": "INFO", "message": "Navigated to Login page"}
+{"timestamp": "2026-06-16T03:26:25.405822Z", "level": "INFO", "message": "TC-LOG-011 PASSED: Register link present"}
+{"timestamp": "2026-06-16T03:26:27.607501Z", "level": "INFO", "message": "WebDriver session closed"}
+{"timestamp": "2026-06-16T03:26:30.962742Z", "level": "INFO", "message": "WebDriver session started"}
+{"timestamp": "2026-06-16T03:26:39.282791Z", "level": "INFO", "message": "Navigated to Login page"}
+{"timestamp": "2026-06-16T03:26:41.365461Z", "level": "INFO", "message": "TC-LOG-012 PASSED: Register link navigates"}
+{"timestamp": "2026-06-16T03:26:43.558039Z", "level": "INFO", "message": "WebDriver session closed"}
+{"timestamp": "2026-06-16T03:26:46.719122Z", "level": "INFO", "message": "WebDriver session started"}
+{"timestamp": "2026-06-16T03:26:53.067784Z", "level": "INFO", "message": "Navigated to Login page"}
+{"timestamp": "2026-06-16T03:26:58.118994Z", "level": "INFO", "message": "TC-LOG-013 PASSED: Terms checkbox checked"}
+{"timestamp": "2026-06-16T03:27:00.331984Z", "level": "INFO", "message": "WebDriver session closed"}
+{"timestamp": "2026-06-16T03:27:03.908918Z", "level": "INFO", "message": "WebDriver session started"}
+{"timestamp": "2026-06-16T03:27:09.833113Z", "level": "INFO", "message": "Navigated to Login page"}
+{"timestamp": "2026-06-16T03:27:14.860067Z", "level": "INFO", "message": "TC-LOG-014 PASSED: SSL badge visible"}
+{"timestamp": "2026-06-16T03:27:17.046114Z", "level": "INFO", "message": "WebDriver session closed"}
+{"timestamp": "2026-06-16T03:27:20.218079Z", "level": "INFO", "message": "WebDriver session started"}
+{"timestamp": "2026-06-16T03:27:25.918797Z", "level": "INFO", "message": "Navigated to Login page"}
+{"timestamp": "2026-06-16T03:27:30.944370Z", "level": "INFO", "message": "TC-LOG-015 PASSED: Trusted badge visible"}
+{"timestamp": "2026-06-16T03:27:33.141829Z", "level": "INFO", "message": "WebDriver session closed"}
+{"timestamp": "2026-06-16T03:27:36.349682Z", "level": "INFO", "message": "WebDriver session started"}
+{"timestamp": "2026-06-16T03:27:42.058833Z", "level": "INFO", "message": "Navigated to Login page"}
+{"timestamp": "2026-06-16T03:28:04.451572Z", "level": "INFO", "message": "Screenshot saved: test_successful_login_032804.png"}
+{"timestamp": "2026-06-16T03:28:06.669771Z", "level": "INFO", "message": "WebDriver session closed"}
+{"timestamp": "2026-06-16T03:28:09.946256Z", "level": "INFO", "message": "WebDriver session started"}
+{"timestamp": "2026-06-16T03:28:15.826757Z", "level": "INFO", "message": "Navigated to Login page"}
+{"timestamp": "2026-06-16T03:28:20.856483Z", "level": "INFO", "message": "TC-LOG-017 PASSED: Test data hint displayed"}
+{"timestamp": "2026-06-16T03:28:23.057089Z", "level": "INFO", "message": "WebDriver session closed"}
+{"timestamp": "2026-06-16T03:28:26.315614Z", "level": "INFO", "message": "WebDriver session started"}
+{"timestamp": "2026-06-16T03:28:31.989589Z", "level": "INFO", "message": "Navigated to Register page"}
+{"timestamp": "2026-06-16T03:28:32.021473Z", "level": "INFO", "message": "TC-REG-001 PASSED: Registration form visible"}
+{"timestamp": "2026-06-16T03:28:34.212723Z", "level": "INFO", "message": "WebDriver session closed"}
+{"timestamp": "2026-06-16T03:28:37.456251Z", "level": "INFO", "message": "WebDriver session started"}
+{"timestamp": "2026-06-16T03:28:42.985408Z", "level": "INFO", "message": "Navigated to Register page"}
+{"timestamp": "2026-06-16T03:28:42.986915Z", "level": "INFO", "message": "TC-REG-002 PASSED: Heading present"}
+{"timestamp": "2026-06-16T03:28:45.314859Z", "level": "INFO", "message": "WebDriver session closed"}
+{"timestamp": "2026-06-16T03:28:48.671502Z", "level": "INFO", "message": "WebDriver session started"}
+{"timestamp": "2026-06-16T03:28:54.024113Z", "level": "INFO", "message": "Navigated to Register page"}
+{"timestamp": "2026-06-16T03:28:54.039456Z", "level": "INFO", "message": "TC-REG-003 PASSED: Business Name field present"}
+{"timestamp": "2026-06-16T03:28:56.264948Z", "level": "INFO", "message": "WebDriver session closed"}
+{"timestamp": "2026-06-16T03:28:59.467509Z", "level": "INFO", "message": "WebDriver session started"}
+{"timestamp": "2026-06-16T03:29:04.886194Z", "level": "INFO", "message": "Navigated to Register page"}
+{"timestamp": "2026-06-16T03:29:04.902246Z", "level": "INFO", "message": "TC-REG-004 PASSED: Email field present"}
+{"timestamp": "2026-06-16T03:29:07.089664Z", "level": "INFO", "message": "WebDriver session closed"}
+{"timestamp": "2026-06-16T03:29:10.450982Z", "level": "INFO", "message": "WebDriver session started"}
+{"timestamp": "2026-06-16T03:29:16.326689Z", "level": "INFO", "message": "Navigated to Register page"}
+{"timestamp": "2026-06-16T03:29:16.338698Z", "level": "INFO", "message": "TC-REG-005 PASSED: Phone field present"}
+{"timestamp": "2026-06-16T03:29:18.522679Z", "level": "INFO", "message": "WebDriver session closed"}
+{"timestamp": "2026-06-16T03:29:21.722705Z", "level": "INFO", "message": "WebDriver session started"}
+{"timestamp": "2026-06-16T03:29:27.143327Z", "level": "INFO", "message": "Navigated to Register page"}
+{"timestamp": "2026-06-16T03:29:27.162421Z", "level": "INFO", "message": "TC-REG-006 PASSED: PIN maxlength=4"}
+{"timestamp": "2026-06-16T03:29:29.348721Z", "level": "INFO", "message": "WebDriver session closed"}
+{"timestamp": "2026-06-16T03:29:32.648529Z", "level": "INFO", "message": "WebDriver session started"}
+{"timestamp": "2026-06-16T03:29:39.106286Z", "level": "INFO", "message": "Navigated to Register page"}
+{"timestamp": "2026-06-16T03:29:39.125507Z", "level": "INFO", "message": "TC-REG-007 PASSED: PIN field masked"}
+{"timestamp": "2026-06-16T03:29:41.350001Z", "level": "INFO", "message": "WebDriver session closed"}
+{"timestamp": "2026-06-16T03:29:44.573203Z", "level": "INFO", "message": "WebDriver session started"}
+{"timestamp": "2026-06-16T03:29:50.363156Z", "level": "INFO", "message": "Navigated to Register page"}
+{"timestamp": "2026-06-16T03:29:50.364162Z", "level": "INFO", "message": "TC-REG-008 PASSED: Register button present"}
+{"timestamp": "2026-06-16T03:29:52.531612Z", "level": "INFO", "message": "WebDriver session closed"}
+{"timestamp": "2026-06-16T03:29:55.748977Z", "level": "INFO", "message": "WebDriver session started"}
+{"timestamp": "2026-06-16T03:30:07.329248Z", "level": "INFO", "message": "Navigated to Register page"}
+{"timestamp": "2026-06-16T03:30:07.343258Z", "level": "INFO", "message": "TC-REG-009 PASSED: Login link present"}
+{"timestamp": "2026-06-16T03:30:09.541433Z", "level": "INFO", "message": "WebDriver session closed"}
+{"timestamp": "2026-06-16T03:30:12.713453Z", "level": "INFO", "message": "WebDriver session started"}
+{"timestamp": "2026-06-16T03:30:18.058698Z", "level": "INFO", "message": "Navigated to Register page"}
+{"timestamp": "2026-06-16T03:30:20.170830Z", "level": "INFO", "message": "TC-REG-010 PASSED: Login link navigates"}
+{"timestamp": "2026-06-16T03:30:22.349117Z", "level": "INFO", "message": "WebDriver session closed"}
+{"timestamp": "2026-06-16T03:30:25.501428Z", "level": "INFO", "message": "WebDriver session started"}
+{"timestamp": "2026-06-16T03:30:30.889235Z", "level": "INFO", "message": "Navigated to Register page"}
+{"timestamp": "2026-06-16T03:30:35.914955Z", "level": "INFO", "message": "TC-REG-011 PASSED: SB logo on register"}
+{"timestamp": "2026-06-16T03:30:38.102110Z", "level": "INFO", "message": "WebDriver session closed"}
+{"timestamp": "2026-06-16T03:30:41.348281Z", "level": "INFO", "message": "WebDriver session started"}
+{"timestamp": "2026-06-16T03:30:47.219092Z", "level": "INFO", "message": "Navigated to Register page"}
+{"timestamp": "2026-06-16T03:30:52.246033Z", "level": "INFO", "message": "TC-REG-012 PASSED: Subtitle text present"}
+{"timestamp": "2026-06-16T03:30:54.436532Z", "level": "INFO", "message": "WebDriver session closed"}
+{"timestamp": "2026-06-16T03:30:57.677712Z", "level": "INFO", "message": "WebDriver session started"}
+{"timestamp": "2026-06-16T03:30:57.677712Z", "level": "INFO", "message": "Security test suite starting"}
+{"timestamp": "2026-06-16T03:30:57.678707Z", "level": "INFO", "message": "TC-SEC-001 PASSED: HTTPS enforced"}
+{"timestamp": "2026-06-16T03:30:59.814688Z", "level": "INFO", "message": "WebDriver session closed"}
+{"timestamp": "2026-06-16T03:31:03.017922Z", "level": "INFO", "message": "WebDriver session started"}
+{"timestamp": "2026-06-16T03:31:03.018926Z", "level": "INFO", "message": "Security test suite starting"}
+{"timestamp": "2026-06-16T03:31:11.644805Z", "level": "INFO", "message": "TC-SEC-002 PASSED: XSS script in email blocked"}
+{"timestamp": "2026-06-16T03:31:13.850416Z", "level": "INFO", "message": "WebDriver session closed"}
+{"timestamp": "2026-06-16T03:31:17.068539Z", "level": "INFO", "message": "WebDriver session started"}
+{"timestamp": "2026-06-16T03:31:17.068539Z", "level": "INFO", "message": "Security test suite starting"}
+{"timestamp": "2026-06-16T03:31:22.578144Z", "level": "INFO", "message": "TC-SEC-003 PASSED: XSS script in password blocked"}
+{"timestamp": "2026-06-16T03:31:24.767374Z", "level": "INFO", "message": "WebDriver session closed"}
+{"timestamp": "2026-06-16T03:31:27.968195Z", "level": "INFO", "message": "WebDriver session started"}
+{"timestamp": "2026-06-16T03:31:27.969196Z", "level": "INFO", "message": "Security test suite starting"}
+{"timestamp": "2026-06-16T03:31:38.717607Z", "level": "INFO", "message": "TC-SEC-004 PASSED: SQL injection blocked"}
+{"timestamp": "2026-06-16T03:31:40.907798Z", "level": "INFO", "message": "WebDriver session closed"}
+{"timestamp": "2026-06-16T03:31:44.233196Z", "level": "INFO", "message": "WebDriver session started"}
+{"timestamp": "2026-06-16T03:31:44.234203Z", "level": "INFO", "message": "Security test suite starting"}
+{"timestamp": "2026-06-16T03:31:49.820710Z", "level": "INFO", "message": "TC-SEC-005 PASSED: Password field masked"}
+{"timestamp": "2026-06-16T03:31:52.014667Z", "level": "INFO", "message": "WebDriver session closed"}
+{"timestamp": "2026-06-16T03:31:54.590257Z", "level": "INFO", "message": "WebDriver session started"}
+{"timestamp": "2026-06-16T03:31:54.590257Z", "level": "INFO", "message": "Security test suite starting"}
+{"timestamp": "2026-06-16T03:32:07.155635Z", "level": "INFO", "message": "TC-SEC-006 PASSED: Register PIN masked"}
+{"timestamp": "2026-06-16T03:32:09.345213Z", "level": "INFO", "message": "WebDriver session closed"}
+{"timestamp": "2026-06-16T03:32:11.591743Z", "level": "INFO", "message": "WebDriver session started"}
+{"timestamp": "2026-06-16T03:32:11.592707Z", "level": "INFO", "message": "Security test suite starting"}
+{"timestamp": "2026-06-16T03:32:17.743443Z", "level": "INFO", "message": "TC-SEC-007 PASSED: API uses HTTPS"}
+{"timestamp": "2026-06-16T03:32:19.927901Z", "level": "INFO", "message": "WebDriver session closed"}
+{"timestamp": "2026-06-16T03:32:22.180407Z", "level": "INFO", "message": "WebDriver session started"}
+{"timestamp": "2026-06-16T03:32:22.180407Z", "level": "INFO", "message": "Security test suite starting"}
+{"timestamp": "2026-06-16T03:32:28.710837Z", "level": "INFO", "message": "TC-SEC-008 PASSED: No plaintext passwords"}
+{"timestamp": "2026-06-16T03:32:30.917504Z", "level": "INFO", "message": "WebDriver session closed"}
+{"timestamp": "2026-06-16T03:32:33.204443Z", "level": "INFO", "message": "WebDriver session started"}
+{"timestamp": "2026-06-16T03:32:33.204443Z", "level": "INFO", "message": "Security test suite starting"}
+{"timestamp": "2026-06-16T03:32:40.305540Z", "level": "INFO", "message": "TC-SEC-009 PASSED: Scripts from trusted domains"}
+{"timestamp": "2026-06-16T03:32:42.490830Z", "level": "INFO", "message": "WebDriver session closed"}
+{"timestamp": "2026-06-16T03:32:44.771580Z", "level": "INFO", "message": "WebDriver session started"}
+{"timestamp": "2026-06-16T03:32:44.791023Z", "level": "INFO", "message": "Security test suite starting"}
+{"timestamp": "2026-06-16T03:32:59.408416Z", "level": "INFO", "message": "TC-SEC-010 PASSED: No critical console errors"}
+{"timestamp": "2026-06-16T03:33:01.614071Z", "level": "INFO", "message": "WebDriver session closed"}
+{"timestamp": "2026-06-16T03:33:03.872402Z", "level": "INFO", "message": "WebDriver session started"}
+{"timestamp": "2026-06-16T03:33:03.876029Z", "level": "INFO", "message": "Security test suite starting"}
+{"timestamp": "2026-06-16T03:33:07.617541Z", "level": "INFO", "message": "TC-SEC-011 PASSED: XSS via hash blocked"}
+{"timestamp": "2026-06-16T03:33:09.802453Z", "level": "INFO", "message": "WebDriver session closed"}
+{"timestamp": "2026-06-16T03:33:12.053223Z", "level": "INFO", "message": "WebDriver session started"}
+{"timestamp": "2026-06-16T03:33:12.053223Z", "level": "INFO", "message": "Security test suite starting"}
+{"timestamp": "2026-06-16T03:33:20.017715Z", "level": "INFO", "message": "TC-SEC-012 PASSED: Form action is local"}
+{"timestamp": "2026-06-16T03:33:22.217370Z", "level": "INFO", "message": "WebDriver session closed"}
+{"timestamp": "2026-06-16T03:39:12.964136Z", "level": "INFO", "message": "WebDriver session started"}
+{"timestamp": "2026-06-16T03:39:18.641158Z", "level": "INFO", "message": "Navigated to Onboarding page"}
+{"timestamp": "2026-06-16T03:39:18.648174Z", "level": "INFO", "message": "TC-ONB-001 PASSED: Page loaded successfully"}
+{"timestamp": "2026-06-16T03:39:20.851778Z", "level": "INFO", "message": "WebDriver session closed"}
+{"timestamp": "2026-06-16T03:39:24.223027Z", "level": "INFO", "message": "WebDriver session started"}
+{"timestamp": "2026-06-16T03:39:30.141937Z", "level": "INFO", "message": "Navigated to Onboarding page"}
+{"timestamp": "2026-06-16T03:39:30.149460Z", "level": "INFO", "message": "TC-ONB-002 PASSED: Title matches"}
+{"timestamp": "2026-06-16T03:39:32.343968Z", "level": "INFO", "message": "WebDriver session closed"}
+{"timestamp": "2026-06-16T03:39:35.573612Z", "level": "INFO", "message": "WebDriver session started"}
+{"timestamp": "2026-06-16T03:39:40.930678Z", "level": "INFO", "message": "Navigated to Onboarding page"}
+{"timestamp": "2026-06-16T03:39:40.945202Z", "level": "INFO", "message": "TC-ONB-003 PASSED: Container rendered"}
+{"timestamp": "2026-06-16T03:39:43.151600Z", "level": "INFO", "message": "WebDriver session closed"}
+{"timestamp": "2026-06-16T03:39:46.401246Z", "level": "INFO", "message": "WebDriver session started"}
+{"timestamp": "2026-06-16T03:39:52.017443Z", "level": "INFO", "message": "Navigated to Onboarding page"}
+{"timestamp": "2026-06-16T03:39:52.286693Z", "level": "INFO", "message": "Screenshot saved: test_slide_smart_inventory_visible_033952.png"}
+{"timestamp": "2026-06-16T03:39:54.500109Z", "level": "INFO", "message": "WebDriver session closed"}
+{"timestamp": "2026-06-16T03:39:57.774622Z", "level": "INFO", "message": "WebDriver session started"}
+{"timestamp": "2026-06-16T03:40:03.052477Z", "level": "INFO", "message": "Navigated to Onboarding page"}
+{"timestamp": "2026-06-16T03:40:03.053472Z", "level": "INFO", "message": "TC-ONB-005 PASSED: Digital Invoicing slide present"}
+{"timestamp": "2026-06-16T03:40:05.243663Z", "level": "INFO", "message": "WebDriver session closed"}
+{"timestamp": "2026-06-16T03:40:08.496254Z", "level": "INFO", "message": "WebDriver session started"}
+{"timestamp": "2026-06-16T03:40:13.867361Z", "level": "INFO", "message": "Navigated to Onboarding page"}
+{"timestamp": "2026-06-16T03:40:13.902441Z", "level": "INFO", "message": "Screenshot saved: test_slide_customer_ledger_visible_034013.png"}
+{"timestamp": "2026-06-16T03:40:16.109073Z", "level": "INFO", "message": "WebDriver session closed"}
+{"timestamp": "2026-06-16T03:40:19.404156Z", "level": "INFO", "message": "WebDriver session started"}
+{"timestamp": "2026-06-16T03:40:25.044705Z", "level": "INFO", "message": "Navigated to Onboarding page"}
+{"timestamp": "2026-06-16T03:40:25.059826Z", "level": "INFO", "message": "TC-ONB-007 PASSED: 3 slides present"}
+{"timestamp": "2026-06-16T03:40:27.280727Z", "level": "INFO", "message": "WebDriver session closed"}
+{"timestamp": "2026-06-16T03:40:30.553775Z", "level": "INFO", "message": "WebDriver session started"}
+{"timestamp": "2026-06-16T03:40:36.578687Z", "level": "INFO", "message": "Navigated to Onboarding page"}
+{"timestamp": "2026-06-16T03:40:36.594206Z", "level": "INFO", "message": "TC-ONB-008 PASSED: 3 dots present"}
+{"timestamp": "2026-06-16T03:40:38.801486Z", "level": "INFO", "message": "WebDriver session closed"}
+{"timestamp": "2026-06-16T03:40:42.093888Z", "level": "INFO", "message": "WebDriver session started"}
+{"timestamp": "2026-06-16T03:40:47.553853Z", "level": "INFO", "message": "Navigated to Onboarding page"}
+{"timestamp": "2026-06-16T03:40:47.617592Z", "level": "INFO", "message": "Screenshot saved: test_first_dot_is_active_034047.png"}
+{"timestamp": "2026-06-16T03:40:49.823149Z", "level": "INFO", "message": "WebDriver session closed"}
+{"timestamp": "2026-06-16T03:40:53.098097Z", "level": "INFO", "message": "WebDriver session started"}
+{"timestamp": "2026-06-16T03:40:58.408570Z", "level": "INFO", "message": "Navigated to Onboarding page"}
+{"timestamp": "2026-06-16T03:40:58.409572Z", "level": "INFO", "message": "TC-ONB-010 PASSED: Get Started button visible"}
+{"timestamp": "2026-06-16T03:41:00.604587Z", "level": "INFO", "message": "WebDriver session closed"}
+{"timestamp": "2026-06-16T03:41:03.985677Z", "level": "INFO", "message": "WebDriver session started"}
+{"timestamp": "2026-06-16T03:41:09.374037Z", "level": "INFO", "message": "Navigated to Onboarding page"}
+{"timestamp": "2026-06-16T03:41:11.505140Z", "level": "INFO", "message": "TC-ONB-011 PASSED: Navigated to login"}
+{"timestamp": "2026-06-16T03:41:13.704154Z", "level": "INFO", "message": "WebDriver session closed"}
+{"timestamp": "2026-06-16T03:41:17.002656Z", "level": "INFO", "message": "WebDriver session started"}
+{"timestamp": "2026-06-16T03:41:22.304231Z", "level": "INFO", "message": "Navigated to Onboarding page"}
+{"timestamp": "2026-06-16T03:41:29.464870Z", "level": "INFO", "message": "TC-ONB-012 PASSED: Existing user link works"}
+{"timestamp": "2026-06-16T03:41:31.661860Z", "level": "INFO", "message": "WebDriver session closed"}
+{"timestamp": "2026-06-16T03:41:35.046828Z", "level": "INFO", "message": "WebDriver session started"}
+{"timestamp": "2026-06-16T03:41:41.250083Z", "level": "INFO", "message": "Navigated to Onboarding page"}
+{"timestamp": "2026-06-16T03:41:46.298192Z", "level": "INFO", "message": "TC-ONB-013 PASSED: Icons rendered"}
+{"timestamp": "2026-06-16T03:41:48.505080Z", "level": "INFO", "message": "WebDriver session closed"}
+{"timestamp": "2026-06-16T03:41:51.892142Z", "level": "INFO", "message": "WebDriver session started"}
+{"timestamp": "2026-06-16T03:41:57.214811Z", "level": "INFO", "message": "Navigated to Onboarding page"}
+{"timestamp": "2026-06-16T03:42:02.314861Z", "level": "INFO", "message": "Screenshot saved: test_slide_descriptions_present_034202.png"}
+{"timestamp": "2026-06-16T03:42:04.522427Z", "level": "INFO", "message": "WebDriver session closed"}
+{"timestamp": "2026-06-16T03:42:08.148477Z", "level": "INFO", "message": "WebDriver session started"}
+{"timestamp": "2026-06-16T03:42:14.307981Z", "level": "INFO", "message": "Navigated to Login page"}
+{"timestamp": "2026-06-16T03:42:14.320993Z", "level": "INFO", "message": "TC-LOG-001 PASSED: Login form visible"}
+{"timestamp": "2026-06-16T03:42:16.513359Z", "level": "INFO", "message": "WebDriver session closed"}
+{"timestamp": "2026-06-16T03:42:19.819402Z", "level": "INFO", "message": "WebDriver session started"}
+{"timestamp": "2026-06-16T03:42:26.223346Z", "level": "INFO", "message": "Navigated to Login page"}
+{"timestamp": "2026-06-16T03:42:26.236474Z", "level": "INFO", "message": "TC-LOG-002 PASSED: Email input present"}
+{"timestamp": "2026-06-16T03:42:28.424879Z", "level": "INFO", "message": "WebDriver session closed"}
+{"timestamp": "2026-06-16T03:42:31.744748Z", "level": "INFO", "message": "WebDriver session started"}
+{"timestamp": "2026-06-16T03:42:37.173945Z", "level": "INFO", "message": "Navigated to Login page"}
+{"timestamp": "2026-06-16T03:42:37.190473Z", "level": "INFO", "message": "TC-LOG-003 PASSED: Password input present"}
+{"timestamp": "2026-06-16T03:42:39.406471Z", "level": "INFO", "message": "WebDriver session closed"}
+{"timestamp": "2026-06-16T03:42:42.648972Z", "level": "INFO", "message": "WebDriver session started"}
+{"timestamp": "2026-06-16T03:42:48.536302Z", "level": "INFO", "message": "Navigated to Login page"}
+{"timestamp": "2026-06-16T03:42:48.537303Z", "level": "INFO", "message": "TC-LOG-004 PASSED: SB logo displayed"}
+{"timestamp": "2026-06-16T03:42:50.753593Z", "level": "INFO", "message": "WebDriver session closed"}
+{"timestamp": "2026-06-16T03:42:53.899465Z", "level": "INFO", "message": "WebDriver session started"}
+{"timestamp": "2026-06-16T03:43:00.229480Z", "level": "INFO", "message": "Navigated to Login page"}
+{"timestamp": "2026-06-16T03:43:00.230490Z", "level": "INFO", "message": "TC-LOG-005 PASSED: Login heading text present"}
+{"timestamp": "2026-06-16T03:43:02.417662Z", "level": "INFO", "message": "WebDriver session closed"}
+{"timestamp": "2026-06-16T03:43:05.792394Z", "level": "INFO", "message": "WebDriver session started"}
+{"timestamp": "2026-06-16T03:43:11.148352Z", "level": "INFO", "message": "Navigated to Login page"}
+{"timestamp": "2026-06-16T03:43:11.166077Z", "level": "INFO", "message": "TC-LOG-006 PASSED: Pre-filled email correct"}
+{"timestamp": "2026-06-16T03:43:13.345829Z", "level": "INFO", "message": "WebDriver session closed"}
+{"timestamp": "2026-06-16T03:43:16.599501Z", "level": "INFO", "message": "WebDriver session started"}
+{"timestamp": "2026-06-16T03:43:22.199888Z", "level": "INFO", "message": "Navigated to Login page"}
+{"timestamp": "2026-06-16T03:43:22.220088Z", "level": "INFO", "message": "TC-LOG-007 PASSED: Pre-filled password correct"}
+{"timestamp": "2026-06-16T03:43:24.423314Z", "level": "INFO", "message": "WebDriver session closed"}
+{"timestamp": "2026-06-16T03:43:27.707406Z", "level": "INFO", "message": "WebDriver session started"}
+{"timestamp": "2026-06-16T03:43:33.182957Z", "level": "INFO", "message": "Navigated to Login page"}
+{"timestamp": "2026-06-16T03:43:33.201489Z", "level": "INFO", "message": "TC-LOG-008 PASSED: Password field is masked"}
+{"timestamp": "2026-06-16T03:43:35.389583Z", "level": "INFO", "message": "WebDriver session closed"}
+{"timestamp": "2026-06-16T03:43:38.617472Z", "level": "INFO", "message": "WebDriver session started"}
+{"timestamp": "2026-06-16T03:43:44.374052Z", "level": "INFO", "message": "Navigated to Login page"}
+{"timestamp": "2026-06-16T03:43:44.392374Z", "level": "INFO", "message": "TC-LOG-009 PASSED: Password maxlength is 4"}
+{"timestamp": "2026-06-16T03:43:46.563247Z", "level": "INFO", "message": "WebDriver session closed"}
+{"timestamp": "2026-06-16T03:43:49.820176Z", "level": "INFO", "message": "WebDriver session started"}
+{"timestamp": "2026-06-16T03:43:55.291316Z", "level": "INFO", "message": "Navigated to Login page"}
+{"timestamp": "2026-06-16T03:43:55.292312Z", "level": "INFO", "message": "TC-LOG-010 PASSED: Submit button text correct"}
+{"timestamp": "2026-06-16T03:43:57.477148Z", "level": "INFO", "message": "WebDriver session closed"}
+{"timestamp": "2026-06-16T03:44:00.754349Z", "level": "INFO", "message": "WebDriver session started"}
+{"timestamp": "2026-06-16T03:44:05.895082Z", "level": "INFO", "message": "Navigated to Login page"}
+{"timestamp": "2026-06-16T03:44:05.907729Z", "level": "INFO", "message": "TC-LOG-011 PASSED: Register link present"}
+{"timestamp": "2026-06-16T03:44:08.121398Z", "level": "INFO", "message": "WebDriver session closed"}
+{"timestamp": "2026-06-16T03:44:11.315155Z", "level": "INFO", "message": "WebDriver session started"}
+{"timestamp": "2026-06-16T03:44:16.657724Z", "level": "INFO", "message": "Navigated to Login page"}
+{"timestamp": "2026-06-16T03:44:18.802194Z", "level": "INFO", "message": "TC-LOG-012 PASSED: Register link navigates"}
+{"timestamp": "2026-06-16T03:44:21.008698Z", "level": "INFO", "message": "WebDriver session closed"}
+{"timestamp": "2026-06-16T03:44:24.151300Z", "level": "INFO", "message": "WebDriver session started"}
+{"timestamp": "2026-06-16T03:44:29.649753Z", "level": "INFO", "message": "Navigated to Login page"}
+{"timestamp": "2026-06-16T03:44:34.679103Z", "level": "INFO", "message": "TC-LOG-013 PASSED: Terms checkbox checked"}
+{"timestamp": "2026-06-16T03:44:36.908102Z", "level": "INFO", "message": "WebDriver session closed"}
+{"timestamp": "2026-06-16T03:44:40.088201Z", "level": "INFO", "message": "WebDriver session started"}
+{"timestamp": "2026-06-16T03:44:45.445884Z", "level": "INFO", "message": "Navigated to Login page"}
+{"timestamp": "2026-06-16T03:44:50.472815Z", "level": "INFO", "message": "TC-LOG-014 PASSED: SSL badge visible"}
+{"timestamp": "2026-06-16T03:44:52.700341Z", "level": "INFO", "message": "WebDriver session closed"}
+{"timestamp": "2026-06-16T03:44:55.838362Z", "level": "INFO", "message": "WebDriver session started"}
+{"timestamp": "2026-06-16T03:45:01.292167Z", "level": "INFO", "message": "Navigated to Login page"}
+{"timestamp": "2026-06-16T03:45:06.318450Z", "level": "INFO", "message": "TC-LOG-015 PASSED: Trusted badge visible"}
+{"timestamp": "2026-06-16T03:45:08.495513Z", "level": "INFO", "message": "WebDriver session closed"}
+{"timestamp": "2026-06-16T03:45:11.690177Z", "level": "INFO", "message": "WebDriver session started"}
+{"timestamp": "2026-06-16T03:45:17.458954Z", "level": "INFO", "message": "Navigated to Login page"}
+{"timestamp": "2026-06-16T03:45:39.810008Z", "level": "INFO", "message": "TC-LOG-016 PASSED: Login successful"}
+{"timestamp": "2026-06-16T03:45:42.038511Z", "level": "INFO", "message": "WebDriver session closed"}
+{"timestamp": "2026-06-16T03:45:45.196819Z", "level": "INFO", "message": "WebDriver session started"}
+{"timestamp": "2026-06-16T03:45:52.863728Z", "level": "INFO", "message": "Navigated to Login page"}
+{"timestamp": "2026-06-16T03:45:57.891021Z", "level": "INFO", "message": "TC-LOG-017 PASSED: Test data hint displayed"}
+{"timestamp": "2026-06-16T03:46:00.099722Z", "level": "INFO", "message": "WebDriver session closed"}
+{"timestamp": "2026-06-16T03:46:03.274847Z", "level": "INFO", "message": "WebDriver session started"}
+{"timestamp": "2026-06-16T03:46:09.984379Z", "level": "INFO", "message": "Navigated to Register page"}
+{"timestamp": "2026-06-16T03:46:09.995897Z", "level": "INFO", "message": "TC-REG-001 PASSED: Registration form visible"}
+{"timestamp": "2026-06-16T03:46:12.198464Z", "level": "INFO", "message": "WebDriver session closed"}
+{"timestamp": "2026-06-16T03:46:15.419075Z", "level": "INFO", "message": "WebDriver session started"}
+{"timestamp": "2026-06-16T03:46:22.430682Z", "level": "INFO", "message": "Navigated to Register page"}
+{"timestamp": "2026-06-16T03:46:22.431680Z", "level": "INFO", "message": "TC-REG-002 PASSED: Heading present"}
+{"timestamp": "2026-06-16T03:46:24.614006Z", "level": "INFO", "message": "WebDriver session closed"}
+{"timestamp": "2026-06-16T03:46:27.828783Z", "level": "INFO", "message": "WebDriver session started"}
+{"timestamp": "2026-06-16T03:46:34.511394Z", "level": "INFO", "message": "Navigated to Register page"}
+{"timestamp": "2026-06-16T03:46:34.524829Z", "level": "INFO", "message": "TC-REG-003 PASSED: Business Name field present"}
+{"timestamp": "2026-06-16T03:46:36.700474Z", "level": "INFO", "message": "WebDriver session closed"}
+{"timestamp": "2026-06-16T03:46:39.911847Z", "level": "INFO", "message": "WebDriver session started"}
+{"timestamp": "2026-06-16T03:46:46.014126Z", "level": "INFO", "message": "Navigated to Register page"}
+{"timestamp": "2026-06-16T03:46:46.025715Z", "level": "INFO", "message": "TC-REG-004 PASSED: Email field present"}
+{"timestamp": "2026-06-16T03:46:48.219945Z", "level": "INFO", "message": "WebDriver session closed"}
+{"timestamp": "2026-06-16T03:46:51.406732Z", "level": "INFO", "message": "WebDriver session started"}
+{"timestamp": "2026-06-16T03:46:57.175744Z", "level": "INFO", "message": "Navigated to Register page"}
+{"timestamp": "2026-06-16T03:46:57.187271Z", "level": "INFO", "message": "TC-REG-005 PASSED: Phone field present"}
+{"timestamp": "2026-06-16T03:46:59.388131Z", "level": "INFO", "message": "WebDriver session closed"}
+{"timestamp": "2026-06-16T03:47:02.534103Z", "level": "INFO", "message": "WebDriver session started"}
+{"timestamp": "2026-06-16T03:47:08.055769Z", "level": "INFO", "message": "Navigated to Register page"}
+{"timestamp": "2026-06-16T03:47:08.079830Z", "level": "INFO", "message": "TC-REG-006 PASSED: PIN maxlength=4"}
+{"timestamp": "2026-06-16T03:47:10.287988Z", "level": "INFO", "message": "WebDriver session closed"}
+{"timestamp": "2026-06-16T03:47:13.569851Z", "level": "INFO", "message": "WebDriver session started"}
+{"timestamp": "2026-06-16T03:47:18.985671Z", "level": "INFO", "message": "Navigated to Register page"}
+{"timestamp": "2026-06-16T03:47:19.007702Z", "level": "INFO", "message": "TC-REG-007 PASSED: PIN field masked"}
+{"timestamp": "2026-06-16T03:47:21.194087Z", "level": "INFO", "message": "WebDriver session closed"}
+{"timestamp": "2026-06-16T03:47:24.461263Z", "level": "INFO", "message": "WebDriver session started"}
+{"timestamp": "2026-06-16T03:47:30.308518Z", "level": "INFO", "message": "Navigated to Register page"}
+{"timestamp": "2026-06-16T03:47:30.309531Z", "level": "INFO", "message": "TC-REG-008 PASSED: Register button present"}
+{"timestamp": "2026-06-16T03:47:32.496824Z", "level": "INFO", "message": "WebDriver session closed"}
+{"timestamp": "2026-06-16T03:47:35.764071Z", "level": "INFO", "message": "WebDriver session started"}
+{"timestamp": "2026-06-16T03:47:41.374493Z", "level": "INFO", "message": "Navigated to Register page"}
+{"timestamp": "2026-06-16T03:47:41.386505Z", "level": "INFO", "message": "TC-REG-009 PASSED: Login link present"}
+{"timestamp": "2026-06-16T03:47:43.579425Z", "level": "INFO", "message": "WebDriver session closed"}
+{"timestamp": "2026-06-16T03:47:46.772725Z", "level": "INFO", "message": "WebDriver session started"}
+{"timestamp": "2026-06-16T03:47:52.396471Z", "level": "INFO", "message": "Navigated to Register page"}
+{"timestamp": "2026-06-16T03:47:54.512441Z", "level": "INFO", "message": "TC-REG-010 PASSED: Login link navigates"}
+{"timestamp": "2026-06-16T03:47:56.706643Z", "level": "INFO", "message": "WebDriver session closed"}
+{"timestamp": "2026-06-16T03:47:59.851907Z", "level": "INFO", "message": "WebDriver session started"}
+{"timestamp": "2026-06-16T03:48:05.220921Z", "level": "INFO", "message": "Navigated to Register page"}
+{"timestamp": "2026-06-16T03:48:10.262044Z", "level": "INFO", "message": "TC-REG-011 PASSED: SB logo on register"}
+{"timestamp": "2026-06-16T03:48:12.459593Z", "level": "INFO", "message": "WebDriver session closed"}
+{"timestamp": "2026-06-16T03:48:15.663111Z", "level": "INFO", "message": "WebDriver session started"}
+{"timestamp": "2026-06-16T03:48:21.111939Z", "level": "INFO", "message": "Navigated to Register page"}
+{"timestamp": "2026-06-16T03:48:26.142582Z", "level": "INFO", "message": "TC-REG-012 PASSED: Subtitle text present"}
+{"timestamp": "2026-06-16T03:48:28.326302Z", "level": "INFO", "message": "WebDriver session closed"}
+{"timestamp": "2026-06-16T03:48:31.511508Z", "level": "INFO", "message": "WebDriver session started"}
+{"timestamp": "2026-06-16T03:48:31.511508Z", "level": "INFO", "message": "Logging in with test credentials..."}
+{"timestamp": "2026-06-16T03:48:47.453864Z", "level": "INFO", "message": "Login successful \u2013 dashboard loaded"}
+{"timestamp": "2026-06-16T03:48:55.503807Z", "level": "INFO", "message": "Navigated to Dashboard page (logged in)"}
+{"timestamp": "2026-06-16T03:48:55.508839Z", "level": "INFO", "message": "TC-DSH-001 PASSED: Dashboard loaded"}
+{"timestamp": "2026-06-16T03:48:57.714832Z", "level": "INFO", "message": "WebDriver session closed"}
+{"timestamp": "2026-06-16T03:49:01.047099Z", "level": "INFO", "message": "WebDriver session started"}
+{"timestamp": "2026-06-16T03:49:01.048099Z", "level": "INFO", "message": "Logging in with test credentials..."}
+{"timestamp": "2026-06-16T03:49:16.832476Z", "level": "INFO", "message": "Login successful \u2013 dashboard loaded"}
+{"timestamp": "2026-06-16T03:49:24.881503Z", "level": "INFO", "message": "Navigated to Dashboard page (logged in)"}
+{"timestamp": "2026-06-16T03:49:24.893775Z", "level": "INFO", "message": "TC-DSH-002 PASSED: Total Sales KPI visible"}
+{"timestamp": "2026-06-16T03:49:27.134130Z", "level": "INFO", "message": "WebDriver session closed"}
+{"timestamp": "2026-06-16T03:49:29.375684Z", "level": "INFO", "message": "WebDriver session started"}
+{"timestamp": "2026-06-16T03:49:29.375684Z", "level": "INFO", "message": "Logging in with test credentials..."}
+{"timestamp": "2026-06-16T03:49:47.286087Z", "level": "INFO", "message": "Login successful \u2013 dashboard loaded"}
+{"timestamp": "2026-06-16T03:49:55.339635Z", "level": "INFO", "message": "Navigated to Dashboard page (logged in)"}
+{"timestamp": "2026-06-16T03:49:55.352229Z", "level": "INFO", "message": "TC-DSH-003 PASSED: Total Udhar KPI visible"}
+{"timestamp": "2026-06-16T03:49:57.568923Z", "level": "INFO", "message": "WebDriver session closed"}
+{"timestamp": "2026-06-16T03:49:59.774787Z", "level": "INFO", "message": "WebDriver session started"}
+{"timestamp": "2026-06-16T03:49:59.775788Z", "level": "INFO", "message": "Logging in with test credentials..."}
+{"timestamp": "2026-06-16T03:50:15.462212Z", "level": "INFO", "message": "Login successful \u2013 dashboard loaded"}
+{"timestamp": "2026-06-16T03:50:23.507589Z", "level": "INFO", "message": "Navigated to Dashboard page (logged in)"}
+{"timestamp": "2026-06-16T03:50:23.518591Z", "level": "INFO", "message": "TC-DSH-004 PASSED: Stock Alerts KPI visible"}
+{"timestamp": "2026-06-16T03:50:25.771687Z", "level": "INFO", "message": "WebDriver session closed"}
+{"timestamp": "2026-06-16T03:50:28.053966Z", "level": "INFO", "message": "WebDriver session started"}
+{"timestamp": "2026-06-16T03:50:28.054973Z", "level": "INFO", "message": "Logging in with test credentials..."}
+{"timestamp": "2026-06-16T03:50:43.635795Z", "level": "INFO", "message": "Login successful \u2013 dashboard loaded"}
+{"timestamp": "2026-06-16T03:50:51.678827Z", "level": "INFO", "message": "Navigated to Dashboard page (logged in)"}
+{"timestamp": "2026-06-16T03:50:51.690823Z", "level": "INFO", "message": "TC-DSH-005 PASSED: Cash in Hand KPI visible"}
+{"timestamp": "2026-06-16T03:50:53.940795Z", "level": "INFO", "message": "WebDriver session closed"}
+{"timestamp": "2026-06-16T03:50:56.227331Z", "level": "INFO", "message": "WebDriver session started"}
+{"timestamp": "2026-06-16T03:50:56.227331Z", "level": "INFO", "message": "Logging in with test credentials..."}
+{"timestamp": "2026-06-16T03:51:12.107174Z", "level": "INFO", "message": "Login successful \u2013 dashboard loaded"}
+{"timestamp": "2026-06-16T03:51:20.150580Z", "level": "INFO", "message": "Navigated to Dashboard page (logged in)"}
+{"timestamp": "2026-06-16T03:51:20.169340Z", "level": "INFO", "message": "TC-DSH-006 PASSED: Currency symbol displayed"}
+{"timestamp": "2026-06-16T03:51:22.394096Z", "level": "INFO", "message": "WebDriver session closed"}
+{"timestamp": "2026-06-16T03:51:24.742996Z", "level": "INFO", "message": "WebDriver session started"}
+{"timestamp": "2026-06-16T03:51:24.742996Z", "level": "INFO", "message": "Logging in with test credentials..."}
+{"timestamp": "2026-06-16T03:51:40.726552Z", "level": "INFO", "message": "Login successful \u2013 dashboard loaded"}
+{"timestamp": "2026-06-16T03:51:48.770504Z", "level": "INFO", "message": "Navigated to Dashboard page (logged in)"}
+{"timestamp": "2026-06-16T03:51:48.783107Z", "level": "INFO", "message": "TC-DSH-007 PASSED: Quick Actions visible"}
+{"timestamp": "2026-06-16T03:51:51.012116Z", "level": "INFO", "message": "WebDriver session closed"}
+{"timestamp": "2026-06-16T03:51:53.231870Z", "level": "INFO", "message": "WebDriver session started"}
+{"timestamp": "2026-06-16T03:51:53.232877Z", "level": "INFO", "message": "Logging in with test credentials..."}
+{"timestamp": "2026-06-16T03:52:08.951184Z", "level": "INFO", "message": "Login successful \u2013 dashboard loaded"}
+{"timestamp": "2026-06-16T03:52:17.008489Z", "level": "INFO", "message": "Navigated to Dashboard page (logged in)"}
+{"timestamp": "2026-06-16T03:52:17.022491Z", "level": "INFO", "message": "TC-DSH-008 PASSED: Add Customer button found"}
+{"timestamp": "2026-06-16T03:52:19.246740Z", "level": "INFO", "message": "WebDriver session closed"}
+{"timestamp": "2026-06-16T03:52:21.514033Z", "level": "INFO", "message": "WebDriver session started"}
+{"timestamp": "2026-06-16T03:52:21.514033Z", "level": "INFO", "message": "Logging in with test credentials..."}
+{"timestamp": "2026-06-16T03:52:39.556633Z", "level": "INFO", "message": "Login successful \u2013 dashboard loaded"}
+{"timestamp": "2026-06-16T03:52:47.600786Z", "level": "INFO", "message": "Navigated to Dashboard page (logged in)"}
+{"timestamp": "2026-06-16T03:52:49.678225Z", "level": "INFO", "message": "TC-DSH-009 PASSED: Add Customer navigates"}
+{"timestamp": "2026-06-16T03:52:51.916769Z", "level": "INFO", "message": "WebDriver session closed"}
+{"timestamp": "2026-06-16T03:52:54.192565Z", "level": "INFO", "message": "WebDriver session started"}
+{"timestamp": "2026-06-16T03:52:54.193566Z", "level": "INFO", "message": "Logging in with test credentials..."}
+{"timestamp": "2026-06-16T03:53:11.092800Z", "level": "INFO", "message": "Login successful \u2013 dashboard loaded"}
+{"timestamp": "2026-06-16T03:53:19.141467Z", "level": "INFO", "message": "Navigated to Dashboard page (logged in)"}
+{"timestamp": "2026-06-16T03:53:26.160410Z", "level": "INFO", "message": "TC-DSH-010 PASSED: Create Invoice button found"}
+{"timestamp": "2026-06-16T03:53:28.400875Z", "level": "INFO", "message": "WebDriver session closed"}
+{"timestamp": "2026-06-16T03:53:30.738765Z", "level": "INFO", "message": "WebDriver session started"}
+{"timestamp": "2026-06-16T03:53:30.739765Z", "level": "INFO", "message": "Logging in with test credentials..."}
+{"timestamp": "2026-06-16T03:53:47.230705Z", "level": "INFO", "message": "Login successful \u2013 dashboard loaded"}
+{"timestamp": "2026-06-16T03:53:55.280254Z", "level": "INFO", "message": "Navigated to Dashboard page (logged in)"}
+{"timestamp": "2026-06-16T03:54:02.298534Z", "level": "INFO", "message": "TC-DSH-011 PASSED: Add Stock button found"}
+{"timestamp": "2026-06-16T03:54:04.520489Z", "level": "INFO", "message": "WebDriver session closed"}
+{"timestamp": "2026-06-16T03:54:06.732508Z", "level": "INFO", "message": "WebDriver session started"}
+{"timestamp": "2026-06-16T03:54:06.733515Z", "level": "INFO", "message": "Logging in with test credentials..."}
