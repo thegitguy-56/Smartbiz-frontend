@@ -233,7 +233,9 @@ class TestSecurity:
         form = self.driver.find_element(By.ID, "login-form")
         action = form.get_attribute("action") or ""
         if action:
-            assert "thegitguy-56.github.io" in action or action.startswith("/"), (
+            from urllib.parse import urlparse
+            base_domain = urlparse(self.base_url).netloc
+            assert base_domain in action or action.startswith("/"), (
                 f"Form action points to external domain: {action}"
             )
         # Empty action = submits to same page, which is fine
