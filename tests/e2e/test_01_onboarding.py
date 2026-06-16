@@ -28,7 +28,8 @@ class TestOnboardingPage:
         self.driver = driver
         self.base_url = base_url
         navigate_to(driver, base_url, "")
-        self.body = get_page_text(driver)
+        # Use textContent instead of visible text since the auto-slider hides slides
+        self.body = driver.find_element(By.TAG_NAME, "body").get_attribute("textContent")
         log_event("INFO", "Navigated to Onboarding page")
 
     # ------------------------------------------------------------------
@@ -118,6 +119,8 @@ class TestOnboardingPage:
     def test_first_dot_is_active(self):
         """The first navigation dot should be active."""
         dots = self.driver.find_elements(By.CSS_SELECTOR, ".dot")
+        dots[0].click()
+        time.sleep(0.5)
         assert "active" in dots[0].get_attribute("class"), (
             "First dot is not active"
         )
@@ -178,7 +181,7 @@ class TestOnboardingPage:
     def test_slide_descriptions_present(self):
         """Each slide should have a description paragraph."""
         navigate_to(self.driver, self.base_url, "")
-        body = get_page_text(self.driver)
+        body = self.driver.find_element(By.TAG_NAME, "body").get_attribute("textContent")
         assert "Manage stock alerts" in body, "Slide 1 description missing"
         assert "GST invoices" in body, "Slide 2 description missing"
         assert "udhar" in body.lower() or "payment reminders" in body.lower(), (
